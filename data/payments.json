@@ -1,0 +1,18 @@
+{
+    "paypal": {
+        "id": 0,
+        "name": "PayPal"
+    },
+    "bango": {
+        "id": 1,
+        "name": "Bango"
+    },
+    "reference": {
+        "id": 2,
+        "name": "Reference"
+    },
+    "boku": {
+        "id": 3,
+        "name": "Boku"
+    }
+}

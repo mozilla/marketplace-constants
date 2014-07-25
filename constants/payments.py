@@ -1,12 +1,10 @@
-from gettext import gettext as _
-
 PENDING = 'PENDING'
 COMPLETED = 'OK'
 FAILED = 'FAILED'
 REFUND_STATUSES = {
-    PENDING: _('Pending'),
-    COMPLETED: _('Completed'),
-    FAILED: _('Failed'),
+    PENDING: 'Pending',
+    COMPLETED: 'Completed',
+    FAILED: 'Failed',
 }
 
 # SellerProduct access types.

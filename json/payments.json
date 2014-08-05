@@ -1,0 +1,16 @@
+{
+  "ACCESS_SIMULATE": 2, 
+  "COMPLETED": "OK", 
+  "REFUND_STATUSES": {
+    "FAILED": "Failed", 
+    "OK": "Completed", 
+    "PENDING": "Pending"
+  }, 
+  "FAILED": "FAILED", 
+  "PAYMENT_STATUSES": {
+    "1": "passed", 
+    "2": "failed"
+  }, 
+  "ACCESS_PURCHASE": 1, 
+  "PENDING": "PENDING"
+}

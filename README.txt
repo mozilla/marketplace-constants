@@ -11,6 +11,6 @@ Python
 
 Example:
 
->>> from constants import regions
+>>> from mpconstants import regions
 >>> regions.AR
 {u'name': u'Argentina', u'default_language': u'es', u'mcc': ...

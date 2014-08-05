@@ -9,7 +9,7 @@ setup(
     author='Andy McKay',
     author_email='andym@mozilla.com',
     license='BSD',
-    packages=['constants'],
+    packages=['mpconstants'],
     url='https://github.com/andymckay/marketplace-constants',
     include_package_data=True,
     classifiers=[

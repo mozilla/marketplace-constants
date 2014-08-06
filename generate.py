@@ -1,8 +1,17 @@
+"""
+This is a pretty simple and naive script to pull all the data from either:
+* the Python scripts
+* or the Mozilla SVN server to give us access to contents.
+
+The intent of this script is to run it, let it update any files in git
+and then commit the changes on each release.
+"""
 import glob
 import importlib
 import json
 import pprint
 import os
+import re
 
 import requests
 
@@ -16,6 +25,9 @@ def names(files):
 
 
 def get_json():
+    """
+    Generate the JSON from the Python files.
+    """
     py_files = glob.glob('mpconstants/*.py')
     for filename in py_files:
         if filename == 'mozilla_languages':
@@ -41,33 +53,39 @@ def get_json():
 
 
 def get_languages():
-    remote_lang = ('http://svn.mozilla.org'
-                   '/libs/product-details/json/languages.json')
-    data = requests.get(remote_lang)
+    """
+    Generate the languages by reading them from svn and generate the
+    matching Python files.
+    """
+    remote = 'http://svn.mozilla.org/libs/product-details/json/languages.json'
+    print 'Fetching: languages'
+    data = requests.get(remote)
     pretty = pprint.pformat(data.json())
     open('json/mozilla_languages.json', 'w').write(pretty)
     open('mpconstants/mozilla_languages.py', 'w').write(
         u'LANGUAGES = ' + pretty)
 
 
-def cleanup():
-    py_files = glob.glob('mpconstants/*.py')
-    json_files = glob.glob('json/*.json')
-    diff = set(names(json_files)).difference(set(names(py_files)))
-    for filename in diff:
-        # Clean up any missing files.
-        full = os.path.join('json', filename)
-        os.remove(full)
-        os.system('git remove {0}'.format(full))
+def get_regions():
+    """
+    Generate the regions by reading them from svn and generate the
+    matching Python files.
+    """
+    remote = 'http://svn.mozilla.org/libs/product-details/json/regions/'
+    data = requests.get(remote)
+    links = set(re.findall(r'href="([^"]+.json)"', data.content))
 
-    for filename in json_files:
-        os.system('git add {0}'.format(filename))
-
-    for filename in py_files:
-        os.system('git add {0}'.format(filename))
+    for link in sorted(links):
+        print 'Fetching: region {0}'.format(link)
+        data = requests.get(remote + link)
+        pretty = pprint.pformat(data.json())
+        open('json/regions/{0}'.format(link), 'w').write(pretty)
+        (open('mpconstants/regions/{0}'
+              .format(link.replace('.json', '.py').replace('-', '_')), 'w')
+              .write(u'REGIONS = ' + pretty))
 
 
 if __name__ == '__main__':
     get_json()
+    get_regions()
     get_languages()
-    cleanup()

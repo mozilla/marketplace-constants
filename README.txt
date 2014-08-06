@@ -1,16 +1,20 @@
 Global constants for the Firefox Marketplace, available in both JS and Python.
 
-JSON
-----
-
-The JSON should be a valid object, so that object keys become accessible from
-Python.
-
 Python
 ------
 
-Example:
+Example::
 
->>> from mpconstants import regions
->>> regions.AR
-{u'name': u'Argentina', u'default_language': u'es', u'mcc': ...
+    >>> from mpconstants import payments
+    >>> payments.PAYMENT_STATUSES
+    {1: 'passed', 2: 'failed'}
+
+Node
+----
+
+Example::
+
+    > var c = require('./mpconstants.js')
+    > c('payments')['PAYMENT_STATUSES']
+      { '1': 'passed',
+        '2': 'failed' }

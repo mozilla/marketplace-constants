@@ -60,10 +60,10 @@ def get_languages():
     remote = 'http://svn.mozilla.org/libs/product-details/json/languages.json'
     print 'Fetching: languages'
     data = requests.get(remote)
-    pretty = pprint.pformat(data.json())
-    open('json/mozilla_languages.json', 'w').write(pretty)
-    open('mpconstants/mozilla_languages.py', 'w').write(
-        u'LANGUAGES = ' + pretty)
+    (open('json/mozilla_languages.json', 'w')
+          .write(json.dumps(data.json(), indent=2)))
+    (open('mpconstants/mozilla_languages.py', 'w').write(
+          u'LANGUAGES = ' + pprint.pformat(data.json())))
 
 
 def get_regions():
@@ -78,11 +78,11 @@ def get_regions():
     for link in sorted(links):
         print 'Fetching: region {0}'.format(link)
         data = requests.get(remote + link)
-        pretty = pprint.pformat(data.json())
-        open('json/regions/{0}'.format(link), 'w').write(pretty)
+        (open('json/regions/{0}'.format(link), 'w')
+              .write(json.dumps(data.json(), indent=2)))
         (open('mpconstants/regions/{0}'
               .format(link.replace('.json', '.py').replace('-', '_')), 'w')
-              .write(u'REGIONS = ' + pretty))
+              .write(u'REGIONS = ' + pprint.pformat(data.json())))
 
 
 if __name__ == '__main__':

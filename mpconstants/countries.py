@@ -154,7 +154,7 @@ COUNTRY_DETAILS = {
         'default_currency': 'GBP',
         'default_language': 'en-US',
         'id': 4,
-        'legacy': 'MX',
+        'legacy': 'UK',
         'mcc': 235,
         'ratingsbody': 'PEGI',
         'slug': 'uk',

@@ -85,7 +85,7 @@ COUNTRY_DETAILS = {
         'legacy': 'CN',
         'mcc': 460,
         'ratingsbody': None,
-        'slug': 'uy',
+        'slug': 'cn',
         'special': True,
         'weight': 0
     },

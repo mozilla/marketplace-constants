@@ -137,6 +137,18 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'ESP': {
+        'adolescent': True,
+        'default_currency': 'EUR',
+        'default_language': 'es',
+        'id': 8,
+        'legacy': 'SPAIN',
+        'mcc': 214,
+        'ratingsbody': 'PEGI',
+        'slug': 'es',
+        'special': False,
+        'weight': 0
+    },
     'FRA': {
         'adolescent': True,
         'default_currency': 'EUR',
@@ -195,6 +207,18 @@ COUNTRY_DETAILS = {
         'ratingsbody': 'PEGI',
         'slug': 'hu',
         'special': False,
+        'weight': 0
+    },
+    'IND': {
+        'adolescent': True,
+        'default_currency': 'INR',
+        'default_language': 'en',
+        'id': 32,
+        'legacy': 'IN',
+        'low_memory': True,
+        'mcc': 405,
+        'ratingsbody': None,
+        'slug': 'in',
         'weight': 0
     },
     'ITA': {

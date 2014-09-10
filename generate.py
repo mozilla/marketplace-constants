@@ -6,6 +6,7 @@ This is a pretty simple and naive script to pull all the data from either:
 The intent of this script is to run it, let it update any files in git
 and then commit the changes on each release.
 """
+from functools import partial
 import glob
 import importlib
 import json
@@ -14,6 +15,12 @@ import os
 import re
 
 import requests
+
+
+JS_PATH = 'dist/js'
+PY_PATH = 'mpconstants'
+js_path = partial(os.path.join, JS_PATH)
+py_path = partial(os.path.join, PY_PATH)
 
 
 def name(filename):
@@ -28,13 +35,13 @@ def get_json():
     """
     Generate the JSON from the Python files.
     """
-    py_files = glob.glob('mpconstants/*.py')
+    py_files = glob.glob(py_path('*.py'))
     for filename in py_files:
         if filename == 'mozilla_languages':
             raise ValueError('The file mozilla_languages is reserved.')
 
         filename = name(filename)
-        module = 'mpconstants.' + filename
+        module = PY_PATH + '.' + filename
         mod = importlib.import_module(module)
 
         export = {}
@@ -46,7 +53,7 @@ def get_json():
         if not export:
             continue
 
-        output = os.path.join('json', filename + '.json')
+        output = js_path(filename + '.json')
         change = 'Updating' if os.path.exists(output) else 'Creating'
         print '{0} file: {1}'.format(change, output)
         json.dump(export, open(output, 'w'), indent=2)
@@ -60,9 +67,9 @@ def get_languages():
     remote = 'http://svn.mozilla.org/libs/product-details/json/languages.json'
     print 'Fetching: languages'
     data = requests.get(remote)
-    (open('json/mozilla_languages.json', 'w')
+    (open(js_path('mozilla_languages.json'), 'w')
           .write(json.dumps(data.json(), indent=2)))
-    (open('mpconstants/mozilla_languages.py', 'w').write(
+    (open(py_path('mozilla_languages.py'), 'w').write(
           u'LANGUAGES = ' + pprint.pformat(data.json())))
 
 
@@ -78,11 +85,14 @@ def get_regions():
     for link in sorted(links):
         print 'Fetching: region {0}'.format(link)
         data = requests.get(remote + link)
-        (open('json/regions/{0}'.format(link), 'w')
-              .write(json.dumps(data.json(), indent=2)))
-        (open('mpconstants/regions/{0}'
-              .format(link.replace('.json', '.py').replace('-', '_')), 'w')
-              .write(u'REGIONS = ' + pprint.pformat(data.json())))
+
+        js_file = open(js_path('regions/{0}'.format(link)), 'w')
+        js_file.write(json.dumps(data.json(), indent=2))
+
+        py_filename = 'regions/{0}'.format(
+            link.replace('.json', '.py').replace('-', '_'))
+        py_file = open(py_path(py_filename), 'w')
+        py_file.write(u'REGIONS = ' + pprint.pformat(data.json()))
 
 
 if __name__ == '__main__':

@@ -168,6 +168,18 @@
       "special": false, 
       "default_currency": "EUR"
     }, 
+    "ESP": {
+      "slug": "es", 
+      "legacy": "SPAIN", 
+      "weight": 0, 
+      "adolescent": true, 
+      "ratingsbody": "PEGI", 
+      "mcc": 214, 
+      "default_language": "es", 
+      "id": 8, 
+      "special": false, 
+      "default_currency": "EUR"
+    }, 
     "SLV": {
       "slug": "sv", 
       "legacy": "SV", 
@@ -287,6 +299,18 @@
       "id": 20, 
       "special": false, 
       "default_currency": "ARS"
+    }, 
+    "IND": {
+      "slug": "in", 
+      "legacy": "IN", 
+      "weight": 0, 
+      "adolescent": true, 
+      "ratingsbody": null, 
+      "mcc": 405, 
+      "low_memory": true, 
+      "default_language": "en", 
+      "id": 32, 
+      "default_currency": "INR"
     }, 
     "MEX": {
       "slug": "mx", 

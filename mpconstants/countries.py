@@ -113,6 +113,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'CZE': {
+        'adolescent': True,
+        'default_currency': 'CZK',
+        'default_language': 'cs',
+        'id': 34,
+        'legacy': 'CZ',
+        'mcc': 230,
+        'slug': 'cz',
+        'special': False,
+        'weight': 0
+    },
     'DEU': {
         'adolescent': True,
         'default_currency': 'EUR',
@@ -230,6 +241,17 @@ COUNTRY_DETAILS = {
         'mcc': 222,
         'ratingsbody': 'PEGI',
         'slug': 'it',
+        'special': False,
+        'weight': 0
+    },
+    'JPN': {
+        'adolescent': True,
+        'default_currency': 'JPY',
+        'default_language': 'ja',
+        'id': 33,
+        'legacy': 'JP',
+        'mcc': 440,
+        'slug': 'jp',
         'special': False,
         'weight': 0
     },

@@ -264,6 +264,17 @@
       "special": false, 
       "default_currency": "UYU"
     }, 
+    "JPN": {
+      "slug": "jp", 
+      "legacy": "JP", 
+      "weight": 0, 
+      "adolescent": true, 
+      "mcc": 440, 
+      "default_language": "ja", 
+      "id": 33, 
+      "special": false, 
+      "default_currency": "JPY"
+    }, 
     "NIC": {
       "slug": "ni", 
       "legacy": "NI", 
@@ -335,6 +346,17 @@
       "id": 7, 
       "special": false, 
       "default_currency": "BRL"
+    }, 
+    "CZE": {
+      "slug": "cz", 
+      "legacy": "CZ", 
+      "weight": 0, 
+      "adolescent": true, 
+      "mcc": 230, 
+      "default_language": "cs", 
+      "id": 34, 
+      "special": false, 
+      "default_currency": "CZK"
     }
   }, 
   "COUNTRIES": [

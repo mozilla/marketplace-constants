@@ -30,7 +30,18 @@ add or remove any files from git and commit. To run the generate script::
 
     python generate.py
 
-This package is on:
+
+Bower
+-----
+
+```bower install marketplace-constants```
+
+The package will consist of a directory of JSON files that you can pull and
+require into your project.
+
+
+**This package is on:**
 
 * pypi: https://pypi.python.org/pypi/marketplace-constants
 * npm: http://npmjs.org/package/marketplace-constants
+* bower: bower install marketplace-constants

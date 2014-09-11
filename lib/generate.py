@@ -13,14 +13,21 @@ import json
 import pprint
 import os
 import re
+import sys
 
 import requests
 
 
+parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Set up partials to easily get the path of a JS/PY file.
 JS_PATH = 'dist/js'
 PY_PATH = 'mpconstants'
-js_path = partial(os.path.join, JS_PATH)
-py_path = partial(os.path.join, PY_PATH)
+js_path = partial(os.path.join, parent, JS_PATH)
+py_path = partial(os.path.join, parent, PY_PATH)
+
+# Append mpconstants folder to path.
+sys.path.append(os.path.join(parent, PY_PATH))
 
 
 def name(filename):
@@ -40,9 +47,7 @@ def get_json():
         if filename == 'mozilla_languages':
             raise ValueError('The file mozilla_languages is reserved.')
 
-        filename = name(filename)
-        module = PY_PATH + '.' + filename
-        mod = importlib.import_module(module)
+        mod = importlib.import_module(name(filename))
 
         export = {}
         for k, v in mod.__dict__.items():

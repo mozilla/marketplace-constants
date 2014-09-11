@@ -28,7 +28,7 @@ If you want to update any constants from SVN, or add in any new constants, then
 run the generate script to build out the new files. Compare the differences,
 add or remove any files from git and commit. To run the generate script::
 
-    python generate.py
+    make
 
 
 Bower

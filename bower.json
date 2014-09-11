@@ -6,6 +6,7 @@
     "ignore": [
         "**/*.py",
         "**/*.txt",
-        "**/*.md"
+        "**/*.md",
+        "mpconstants"
     ]
 }

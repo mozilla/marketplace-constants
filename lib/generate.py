@@ -57,20 +57,20 @@ def get_js_modules():
         mod = importlib.import_module(filename)
 
         # Build the data.
-        export = {}
+        data = {}
         for k, v in mod.__dict__.items():
             if k.startswith('__') and k.endswith('__'):
                 continue
-            export[k] = v
-        if not export:
+            data[k] = v
+        if not data:
             continue
-        export = json.dumps(export).replace("'", "\\'")
+        data = json.dumps(data).replace("'", "\\'")
 
         # Write the data.
         output = js_path(filename + '.js')
         change = 'Updating' if os.path.exists(output) else 'Creating'
         print '{0} file: {1}'.format(change, output)
-        open(output, 'w').write(js_module_template % export)
+        open(output, 'w').write(js_module_template % data)
 
 
 def get_languages():

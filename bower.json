@@ -7,6 +7,8 @@
         "**/*.py",
         "**/*.txt",
         "**/*.md",
-        "mpconstants"
+        "lib",
+        "mpconstants",
+        "Makefile"
     ]
 }

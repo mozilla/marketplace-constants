@@ -23,8 +23,10 @@ parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Set up partials to easily get the path of a JS/PY file.
 JS_PATH = 'dist/js'
 PY_PATH = 'mpconstants'
+LIB_PATH = 'lib'
 js_path = partial(os.path.join, parent, JS_PATH)
 py_path = partial(os.path.join, parent, PY_PATH)
+lib_path = partial(os.path.join, parent, LIB_PATH)
 
 # Append mpconstants folder to path.
 sys.path.append(os.path.join(parent, PY_PATH))
@@ -38,30 +40,37 @@ def names(files):
     return [name(f) for f in files]
 
 
-def get_json():
+def get_js_modules():
     """
-    Generate the JSON from the Python files.
+    Generate JS modules from the Python files.
     """
+    js_module_template = open(lib_path('require_template.js'), 'r').read()
     py_files = glob.glob(py_path('*.py'))
+
     for filename in py_files:
+        filename = name(filename)
         if filename == 'mozilla_languages':
-            raise ValueError('The file mozilla_languages is reserved.')
+            # The file mozilla_languages is reserved.
+            continue
 
-        mod = importlib.import_module(name(filename))
+        # Get the data.
+        mod = importlib.import_module(filename)
 
+        # Build the data.
         export = {}
         for k, v in mod.__dict__.items():
             if k.startswith('__') and k.endswith('__'):
                 continue
             export[k] = v
-
         if not export:
             continue
+        export = json.dumps(export).replace("'", "\\'")
 
-        output = js_path(filename + '.json')
+        # Write the data.
+        output = js_path(filename + '.js')
         change = 'Updating' if os.path.exists(output) else 'Creating'
         print '{0} file: {1}'.format(change, output)
-        json.dump(export, open(output, 'w'), indent=2)
+        open(output, 'w').write(js_module_template % export)
 
 
 def get_languages():
@@ -101,6 +110,6 @@ def get_regions():
 
 
 if __name__ == '__main__':
-    get_json()
+    get_js_modules()
     get_regions()
     get_languages()

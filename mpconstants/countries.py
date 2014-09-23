@@ -304,7 +304,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PER': {
-        'adolescent': True,
+        'adolescent': False,
         'default_currency': 'PEN',
         'default_language': 'es',
         'id': 18,
@@ -352,7 +352,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'URY': {
-        'adolescent': True,
+        'adolescent': False,
         'default_currency': 'UYU',
         'default_language': 'es',
         'id': 19,
@@ -376,7 +376,7 @@ COUNTRY_DETAILS = {
         'weight': 1
     },
     'VEN': {
-        'adolescent': True,
+        'adolescent': False,
         'default_currency': 'USD',
         'default_language': 'es',
         'id': 10,

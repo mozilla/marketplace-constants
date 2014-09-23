@@ -5,7 +5,7 @@ setup(
     name='marketplace-constants',
     version='0.1.4.5',
     description='Standard constants for the marketplace',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     author='Andy McKay',
     author_email='andym@mozilla.com',
     license='BSD',

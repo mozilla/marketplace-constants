@@ -274,7 +274,6 @@ COUNTRY_DETAILS = {
         'id': 15,
         'legacy': 'ME',
         'mcc': 297,
-        'ratingsbody': 'ESRB',
         'slug': 'me',
         'special': False,
         'weight': 0

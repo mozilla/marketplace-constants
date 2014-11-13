@@ -314,6 +314,18 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'PHL': {
+        'adolescent': True,
+        'default_currency': 'PHP',
+        'default_language': 'en',
+        'id': 35,
+        'legacy': 'PH',
+        'low_memory': True,
+        'mcc': 515,
+        'ratingsbody': None,
+        'slug': 'ph',
+        'weight': 0
+    },
     'POL': {
         'adolescent': True,
         'default_currency': 'PLN',

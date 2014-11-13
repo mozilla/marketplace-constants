@@ -9,7 +9,7 @@ Global constants for the Firefox Marketplace, available in both JS and Python.
 Python
 ------
 
-Example::
+Example:
 
     >>> from mpconstants import payments
     >>> payments.PAYMENT_STATUSES
@@ -26,7 +26,7 @@ stuff that you can copy and require into your project.
 Node
 ----
 
-Example::
+Example:
 
     > var c = require('./mpconstants.js')
     > c('payments')['PAYMENT_STATUSES']

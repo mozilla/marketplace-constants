@@ -338,6 +338,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'RUS': {
+        'adolescent': True,
+        'default_currency': 'EUR',
+        'default_language': 'ru',
+        'id': 36,
+        'legacy': 'RU',
+        'mcc': 250,
+        'slug': 'ru',
+        'special': False,
+        'weight': 0
+    },
     'SLV': {
         'adolescent': True,
         'default_currency': 'USD',

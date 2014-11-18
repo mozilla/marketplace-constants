@@ -409,4 +409,16 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'ZAF': {
+        'adolescent': False,
+        'default_currency': 'ZAR',
+        'default_language': 'en-US',
+        'id': 37,
+        'legacy': 'ZA',
+        'mcc': 655,
+        'ratingsbody': None,
+        'slug': 'za',
+        'special': False,
+        'weight': 0
+    },
 }

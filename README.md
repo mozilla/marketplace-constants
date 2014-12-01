@@ -1,3 +1,6 @@
+Marketplace Constants
+---------------------
+
 Global constants for the Firefox Marketplace, available in both JS and Python.
 
 **This package is on:**
@@ -5,6 +8,10 @@ Global constants for the Firefox Marketplace, available in both JS and Python.
 * pypi: https://pypi.python.org/pypi/marketplace-constants
 * npm: http://npmjs.org/package/marketplace-constants
 * bower: ```bower install marketplace-constants```
+
+To generate the constants, run:
+
+    make
 
 Python
 ------
@@ -43,6 +50,4 @@ The content of these files are generated from multiple sources:
 
 If you want to update any constants from SVN, or add in any new constants, then
 run the generate script to build out the new files. Compare the differences,
-add or remove any files from git and commit. To run the generate script:
-
-    make
+add or remove any files from git and commit.

@@ -1,0 +1,13 @@
+language: python
+python:
+- '2.7'
+install: pip install -r requirements.txt
+script: nosetests
+deploy:
+  provider: pypi
+  user: marketplacedevsinternal
+  password:
+    secure: fUazEzYiQIC0QKWwum/163F4xbdAPhvH2ql4c/Sd2dAI/1Rml15O0ENNXwdKWEO658pAGeEr+/rkOlMfZNR1Dsfn5uiCFPKCCmqF7umjVCIRF1eXybWw+qK1jBwUNpZwHTqinXpg8/8kLuMgwZAIkykBhqcnuT+Uv08opwcuKBk=
+  on:
+    all_branches: true
+    tags: true

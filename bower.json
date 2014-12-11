@@ -2,7 +2,7 @@
     "author": "Andy McKay",
     "name": "marketplace-constants",
     "description": "Standard constants for the marketplace",
-    "version": "0.1.4.8",
+    "version": "0.1.5",
     "ignore": [
         "**/*.py",
         "**/*.txt",

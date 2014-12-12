@@ -2,7 +2,7 @@
     "author": "Andy McKay",
     "name": "marketplace-constants",
     "description": "Common, universal constants for the Firefox Marketplace",
-    "version": "0.1.71",
+    "version": "0.1.72",
     "ignore": [
         "**/*.py",
         "**/*.txt",

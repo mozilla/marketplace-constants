@@ -13,6 +13,7 @@ import json
 import pprint
 import os
 import re
+import shutil
 import sys
 
 import requests
@@ -22,9 +23,13 @@ parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Set up partials to easily get the path of a JS/PY file.
 JS_PATH = 'dist/js'
+CSS_PATH = 'dist/css'
+IMG_PATH = 'dist/img'
 PY_PATH = 'mpconstants'
 LIB_PATH = 'lib'
 js_path = partial(os.path.join, parent, JS_PATH)
+css_path = partial(os.path.join, parent, CSS_PATH)
+img_path = partial(os.path.join, parent, IMG_PATH)
 py_path = partial(os.path.join, parent, PY_PATH)
 lib_path = partial(os.path.join, parent, LIB_PATH)
 
@@ -42,15 +47,14 @@ def names(files):
 
 def get_js_modules():
     """
-    Generate JS modules from the Python files.
+    Generate JS modules from the Python files. Without any extra processing.
     """
-    js_module_template = open(lib_path('require_template.js'), 'r').read()
+    js_module_template = open(lib_path('templates/umd.js'), 'r').read()
     py_files = glob.glob(py_path('*.py'))
 
     for filename in py_files:
         filename = name(filename)
-        if filename == 'mozilla_languages':
-            # The file mozilla_languages is reserved.
+        if filename in ['__init__', 'mozilla_languages']:
             continue
 
         # Get the data.
@@ -109,7 +113,89 @@ def get_regions():
         py_file.write(u'REGIONS = ' + pprint.pformat(data.json()))
 
 
+def build_regions_js():
+    """
+    Generate a supported regions modules for Marketplace frontend projects.
+    Maps from region slug to gettexted region names.
+    ex: {'fr': gettext('France'),...}
+    """
+    js_module_template = open(lib_path('templates/umd.js'), 'r').read()
+    countries = name(glob.glob(py_path('countries.py'))[0])
+    countries = importlib.import_module(countries)
+
+    data = {"restofworld": "gettext('Rest of World')"}
+    for k, country in countries.COUNTRY_DETAILS.items():
+        # Create map from region slugs to gettexts.
+        data[country['slug'].lower()] = "gettext('%s')" % country['name']
+    data = json.dumps(data)
+
+    # Unquote the gettexts.
+    data = (data.replace('"gettext', 'gettext')
+                .replace('",', ',')
+                .replace('"}', '}'))
+
+    # Write the data.
+    output = js_path('regions.js')
+    change = 'Updating' if os.path.exists(output) else 'Creating'
+    print '{0} file: {1}'.format(change, output)
+    open(output, 'w').write(js_module_template % data)
+
+
+def build_regions_css():
+    """
+    Generate a regions CSS modules that creates rules to show region background
+    images.
+    ex: .region-fr { background-image: url('../img/icons/regions/fr.png');}
+    """
+    css_template = open(lib_path('templates/regions.styl'), 'r').read()
+    countries = name(glob.glob(py_path('countries.py'))[0])
+    countries = importlib.import_module(countries)
+
+    # Create list of region slugs (e.g., "ar br de fr").
+    regions = ''
+    for k, country in countries.COUNTRY_DETAILS.items():
+        region = country['slug'].lower()
+        if region == 'in':
+            # Escape Stylus in keyword.
+            region = '%r' % region
+        regions += ' ' + region
+    regions += ' restofworld;'
+
+    # Write the data.
+    output = css_path('regions.styl')
+    change = 'Updating' if os.path.exists(output) else 'Creating'
+    print '{0} file: {1}'.format(change, output)
+    open(output, 'w').write(css_template % regions)
+
+
+def get_region_imgs():
+    """
+    Set the country flag images in dist/img/regions. Only copy over images for
+    supported regions. Delete any images that aren't supported. Supported
+    regions are defined in countries.py.COUNTRY_DETAILS.
+    """
+    try:
+        # Delete the directory so we don't have imgs we don't need.
+        os.rmdir(img_path('regions'))
+        os.mkdir(img_path('regions'))
+    except OSError:
+        pass
+
+    countries = name(glob.glob(py_path('countries.py'))[0])
+    countries = importlib.import_module(countries)
+    regions = [country[1]['slug'] for country in
+               countries.COUNTRY_DETAILS.items()]
+
+    print 'Copying region flag images'
+    for region in regions + ['restofworld']:
+        shutil.copy('mpconstants/img/regions/' + region + '.png',
+                    'dist/img/regions/')
+
+
 if __name__ == '__main__':
     get_js_modules()
     get_regions()
     get_languages()
+    build_regions_js()
+    build_regions_css()
+    get_region_imgs()

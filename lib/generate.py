@@ -119,7 +119,7 @@ def build_regions_js():
     Maps from region slug to gettexted region names.
     ex: {'fr': gettext('France'),...}
     """
-    js_module_template = open(lib_path('templates/umd.js'), 'r').read()
+    js_module_template = open(lib_path('templates/regions.js'), 'r').read()
     countries = name(glob.glob(py_path('countries.py'))[0])
     countries = importlib.import_module(countries)
 

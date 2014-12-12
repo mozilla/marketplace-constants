@@ -123,10 +123,15 @@ def build_regions_js():
     countries = name(glob.glob(py_path('countries.py'))[0])
     countries = importlib.import_module(countries)
 
-    data = {"restofworld": "gettext('Rest of World')"}
+    data = {
+        'REGION_CHOICES_SLUG': {
+            'restofworld': "gettext('Rest of World')"
+        }
+    }
     for k, country in countries.COUNTRY_DETAILS.items():
         # Create map from region slugs to gettexts.
-        data[country['slug'].lower()] = "gettext('%s')" % country['name']
+        data['REGION_CHOICES_SLUG'][country['slug'].lower()] = (
+            "gettext('%s')" % country['name'])
     data = json.dumps(data)
 
     # Unquote the gettexts.

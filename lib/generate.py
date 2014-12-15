@@ -18,6 +18,7 @@ import sys
 
 import mobile_codes
 import requests
+import mobile_codes
 
 
 parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

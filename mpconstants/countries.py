@@ -415,7 +415,7 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
-    'USD': {
+    'USA': {
         'adolescent': True,
         'default_currency': 'USD',
         'default_language': 'en-US',

@@ -16,6 +16,7 @@ import re
 import shutil
 import sys
 
+import mobile_codes
 import requests
 
 
@@ -123,21 +124,35 @@ def build_regions_js():
     countries = name(glob.glob(py_path('countries.py'))[0])
     countries = importlib.import_module(countries)
 
+    # REGION_CHOICES_SLUG: Region slug to gettext mapping.
     data = {
         'REGION_CHOICES_SLUG': {
             'restofworld': "gettext('Rest of World')"
-        }
+        },
+        'MOBILE_CODES': {}
     }
     for k, country in countries.COUNTRY_DETAILS.items():
-        # Create map from region slugs to gettexts.
         data['REGION_CHOICES_SLUG'][country['slug'].lower()] = (
             "gettext('%s')" % country['name'])
+
+    # MOBILE_CODES: Mobile code to region slug mapping.
+    for alpha3, country in countries.COUNTRY_DETAILS.items():
+        try:
+            mccs = mobile_codes.alpha3(alpha3).mcc
+        except KeyError:
+            mccs = mobile_codes.name(country['name'].lower()).mcc
+        if not isinstance(mccs, list):
+            mccs = [mccs]
+        for mcc in mccs:
+            data['MOBILE_CODES'][mcc] = country['slug']
+
+    # Serialize.
     data = json.dumps(data)
 
     # Unquote the gettexts.
     data = (data.replace('"gettext', 'gettext')
-                .replace('",', ',')
-                .replace('"}', '}'))
+                .replace(')",', ',')
+                .replace(')"}}', ')}}'))
 
     # Write the data.
     output = js_path('regions.js')

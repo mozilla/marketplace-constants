@@ -152,7 +152,7 @@ def build_regions_js():
 
     # Unquote the gettexts.
     data = (data.replace('"gettext', 'gettext')
-                .replace(')",', ',')
+                .replace(')",', '),')
                 .replace(')"}}', ')}}'))
 
     # Write the data.

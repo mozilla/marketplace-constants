@@ -84,7 +84,7 @@ def get_languages():
     Generate the languages by reading them from svn and generate the
     matching Python files.
     """
-    remote = 'http://svn.mozilla.org/libs/product-details/json/languages.json'
+    remote = 'https://svn.mozilla.org/libs/product-details/json/languages.json'
     print 'Fetching: languages'
     data = requests.get(remote)
     (open(js_path('mozilla_languages.json'), 'w')
@@ -98,7 +98,7 @@ def get_regions():
     Generate the regions by reading them from svn and generate the
     matching Python files.
     """
-    remote = 'http://svn.mozilla.org/libs/product-details/json/regions/'
+    remote = 'https://svn.mozilla.org/libs/product-details/json/regions/'
     data = requests.get(remote)
     links = set(re.findall(r'href="([^"]+.json)"', data.content))
 

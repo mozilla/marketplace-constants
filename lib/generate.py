@@ -43,6 +43,10 @@ def name(filename):
     return os.path.splitext(os.path.split(filename)[-1])[0]
 
 
+def js_name(filename):
+    return 'languages' if filename == 'mozilla_languages' else filename
+
+
 def names(files):
     return [name(f) for f in files]
 
@@ -56,7 +60,7 @@ def get_js_modules():
 
     for filename in py_files:
         filename = name(filename)
-        if filename in ['__init__', 'mozilla_languages']:
+        if filename == '__init__':
             continue
 
         # Get the data.
@@ -73,7 +77,7 @@ def get_js_modules():
         data = json.dumps(data).replace("'", "\\'")
 
         # Write the data.
-        output = js_path(filename + '.js')
+        output = js_path(js_name(filename) + '.js')
         change = 'Updating' if os.path.exists(output) else 'Creating'
         print '{0} file: {1}'.format(change, output)
         open(output, 'w').write(js_module_template % data)

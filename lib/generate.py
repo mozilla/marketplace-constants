@@ -51,8 +51,8 @@ def names(files):
 
 def trim_data_js(filename, data):
     """Get rid of unneeded data for JS on a file-by-file basis."""
-    if filename == 'feed_colors':
-        for k in ['FEED_COLORS_REVERSE', 'FEED_COLOR_CHOICES']:
+    if filename == 'collection_colors':
+        for k in ['COLLECTION_COLORS_REVERSE', 'COLLECTION_COLORS_CHOICES']:
             del data[k]
     return data
 
@@ -223,17 +223,17 @@ def get_region_imgs():
                     'dist/img/regions/')
 
 
-def build_feed_colors_css():
-    template = jinja2.get_template('feed_colors.styl')
-    feed_colors = name(glob.glob(py_path('feed_colors.py'))[0])
-    feed_colors = importlib.import_module(feed_colors)
+def build_collection_colors_css():
+    template = jinja2.get_template('collection_colors.styl')
+    collection_colors = name(glob.glob(py_path('collection_colors.py'))[0])
+    collection_colors = importlib.import_module(collection_colors)
 
     # Write the data.
-    output = css_path('feed_colors.styl')
+    output = css_path('collection_colors.styl')
     change = 'Updating' if os.path.exists(output) else 'Creating'
     print '{0} file: {1}'.format(change, output)
     open(output, 'w').write(
-        template.render(colors=feed_colors.FEED_COLORS.items()))
+        template.render(colors=collection_colors.COLLECTION_COLORS.items()))
 
 
 if __name__ == '__main__':
@@ -243,4 +243,4 @@ if __name__ == '__main__':
     build_regions_js()
     build_regions_css()
     get_region_imgs()
-    build_feed_colors_css()
+    build_collection_colors_css()

@@ -1,4 +1,4 @@
-FEED_COLORS = {
+COLLECTION_COLORS = {
     'ruby': '#CE001C',
     'amber': '#F78813',
     'emerald': '#00953F',
@@ -8,6 +8,6 @@ FEED_COLORS = {
     'garnet': '#A20D55',
 }
 
-FEED_COLORS_REVERSE = dict((v, k) for k, v in FEED_COLORS.iteritems())
+COLLECTION_COLORS_REVERSE = dict((v, k) for k, v in COLLECTION_COLORS.iteritems())
 
-FEED_COLOR_CHOICES = FEED_COLORS_REVERSE.items()
+COLLECTION_COLORS_CHOICES = COLLECTION_COLORS_REVERSE.items()

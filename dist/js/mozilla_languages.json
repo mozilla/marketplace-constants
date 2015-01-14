@@ -455,6 +455,10 @@
     "native": "Bahasa Indonesia", 
     "English": "Indonesian"
   }, 
+  "sat": {
+    "native": "\u0938\u0902\u0924\u093e\u0932\u0940", 
+    "English": "Santali"
+  }, 
   "sr": {
     "native": "\u0421\u0440\u043f\u0441\u043a\u0438", 
     "English": "Serbian"

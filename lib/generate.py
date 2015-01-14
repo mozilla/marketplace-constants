@@ -16,11 +16,13 @@ import re
 import shutil
 import sys
 
+from jinja2 import Environment, PackageLoader
 import mobile_codes
 import requests
 import mobile_codes
 
 
+jinja2 = Environment(loader=PackageLoader('templates', 'jinja2'))
 parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Set up partials to easily get the path of a JS/PY file.
@@ -47,6 +49,13 @@ def names(files):
     return [name(f) for f in files]
 
 
+def trim_data_js(filename, data):
+    """Get rid of unneeded data for JS on a file-by-file basis."""
+    if filename == 'feed_colors':
+        for k in ['FEED_COLORS_REVERSE', 'FEED_COLOR_CHOICES']:
+            del data[k]
+    return data
+
 def get_js_modules():
     """
     Generate JS modules from the Python files. Without any extra processing.
@@ -70,6 +79,7 @@ def get_js_modules():
             data[k] = v
         if not data:
             continue
+        data = trim_data_js(filename, data)
         data = json.dumps(data).replace("'", "\\'")
 
         # Write the data.
@@ -213,6 +223,19 @@ def get_region_imgs():
                     'dist/img/regions/')
 
 
+def build_feed_colors_css():
+    template = jinja2.get_template('feed_colors.styl')
+    feed_colors = name(glob.glob(py_path('feed_colors.py'))[0])
+    feed_colors = importlib.import_module(feed_colors)
+
+    # Write the data.
+    output = css_path('feed_colors.styl')
+    change = 'Updating' if os.path.exists(output) else 'Creating'
+    print '{0} file: {1}'.format(change, output)
+    open(output, 'w').write(
+        template.render(colors=feed_colors.FEED_COLORS.items()))
+
+
 if __name__ == '__main__':
     get_js_modules()
     get_regions()
@@ -220,3 +243,4 @@ if __name__ == '__main__':
     build_regions_js()
     build_regions_css()
     get_region_imgs()
+    build_feed_colors_css()

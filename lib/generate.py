@@ -151,7 +151,8 @@ def build_regions_js():
         try:
             mccs = mobile_codes.alpha3(alpha3).mcc
         except KeyError:
-            mccs = mobile_codes.name(country['name'].lower()).mcc
+            continue
+
         if not isinstance(mccs, list):
             mccs = [mccs]
         for mcc in mccs:

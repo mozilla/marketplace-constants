@@ -244,7 +244,7 @@ COUNTRY_DETAILS = {
         'legacy': 'IN',
         'low_memory': True,
         'mcc': 405,
-        'name': 'Indonesia',
+        'name': 'India',
         'ratingsbody': None,
         'slug': 'in',
         'weight': 0

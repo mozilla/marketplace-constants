@@ -172,19 +172,6 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
-    'GAL': {
-        'adolescent': True,
-        'default_currency': 'EUR',
-        'default_language': 'gl',
-        'id': 4,
-        'mcc': 214,
-        'name': 'Galicia',
-        'ratingsbody': 'PEGI',
-        'slug': 'gl',
-        'special': False,
-        'weight': 0
-
-    },
     'GBR': {
         'adolescent': True,
         'default_currency': 'GBP',
@@ -272,7 +259,7 @@ COUNTRY_DETAILS = {
         'adolescent': True,
         'default_currency': 'LTL',
         'default_language': 'lt',
-        'id': 36,
+        'id': 38,
         'mcc': 370,
         'name': 'Lithuania',
         'slug': 'lt',

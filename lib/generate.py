@@ -56,6 +56,7 @@ def trim_data_js(filename, data):
             del data[k]
     return data
 
+
 def get_js_modules():
     """
     Generate JS modules from the Python files. Without any extra processing.
@@ -65,7 +66,7 @@ def get_js_modules():
 
     for filename in py_files:
         filename = name(filename)
-        if filename in ['__init__', 'mozilla_languages']:
+        if filename in ['__init__', 'mozilla_languages', 'tests']:
             continue
 
         # Get the data.

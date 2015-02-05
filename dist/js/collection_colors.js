@@ -12,5 +12,5 @@
         root.returnExports = factory();
     }
 }(this, function() {
-    return {"COLLECTION_COLORS": {"amber": "#F78813", "garnet": "#A20D55", "topaz": "#0099D0", "amethyst": "#5A197E", "sapphire": "#1E1E9C", "emerald": "#00953F", "ruby": "#CE001C"}};
+    return {"COLLECTION_COLORS": {"amber": "#ED8040", "topaz": "#FAD73B", "amethyst": "#8D4B87", "sapphire": "#3A5990", "emerald": "#8BC873", "aquamarine": "#00C9A8", "garnet": "#E77286", "ruby": "#D46952"}};
 }));

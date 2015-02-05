@@ -4,3 +4,5 @@
 {% for color, hex in colors %}
 $color-collection--{{ color }} = {{ hex }};
 {%- endfor %}
+
+$collection-colors = {% for color, hex in colors %}{{ color }} {% endfor %};

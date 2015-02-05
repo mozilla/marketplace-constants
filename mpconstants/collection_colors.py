@@ -1,11 +1,12 @@
 COLLECTION_COLORS = {
-    'ruby': '#CE001C',
-    'amber': '#F78813',
-    'emerald': '#00953F',
-    'topaz': '#0099D0',
-    'sapphire': '#1E1E9C',
-    'amethyst': '#5A197E',
-    'garnet': '#A20D55',
+    'ruby': '#D46952',  # Red.
+    'amber': '#ED8040',  # Orange.
+    'topaz': '#FAD73B',  # Yellow.
+    'emerald': '#8BC873',  # Green.
+    'aquamarine': '#00C9A8',  # Blue.
+    'sapphire': '#3A5990',  # Dark blue.
+    'amethyst': '#8D4B87',  # Purple.
+    'garnet': '#E77286',  # Magenta.
 }
 
 COLLECTION_COLORS_REVERSE = dict((v, k) for k, v in COLLECTION_COLORS.iteritems())

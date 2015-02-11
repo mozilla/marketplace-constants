@@ -1,7 +1,7 @@
+# Thinking about yellow? Don't do it! (bug 1131248).
 COLLECTION_COLORS = {
     'ruby': '#D46952',  # Red.
     'amber': '#ED8040',  # Orange.
-    'topaz': '#FAD73B',  # Yellow.
     'emerald': '#8BC873',  # Green.
     'aquamarine': '#00C9A8',  # Blue.
     'sapphire': '#3A5990',  # Dark blue.

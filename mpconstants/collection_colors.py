@@ -1,12 +1,12 @@
-# Thinking about yellow? Don't do it! (bug 1131248).
 COLLECTION_COLORS = {
-    'ruby': '#D46952',  # Red.
-    'amber': '#ED8040',  # Orange.
-    'emerald': '#8BC873',  # Green.
-    'aquamarine': '#00C9A8',  # Blue.
-    'sapphire': '#3A5990',  # Dark blue.
-    'amethyst': '#8D4B87',  # Purple.
-    'garnet': '#E77286',  # Magenta.
+    'sapphire': '#2d457e',  # Dark blue.
+    'aquamarine': '#197b99',  # Blue.
+    'emerald': '#1b8215',  # Green.
+    'gold': 'ffb300', # Yellow.
+    'amber': '#cc440d',  # Orange.
+    'ruby': '#c93333',  # Red.
+    'garnet': '#cc3388',  # Magenta.
+    'amethyst': '#7a3675',  # Purple.
 }
 
 COLLECTION_COLORS_REVERSE = dict((v, k) for k, v in COLLECTION_COLORS.iteritems())

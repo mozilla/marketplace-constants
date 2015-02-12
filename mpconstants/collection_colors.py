@@ -2,7 +2,7 @@ COLLECTION_COLORS = {
     'sapphire': '#2d457e',  # Dark blue.
     'aquamarine': '#197b99',  # Blue.
     'emerald': '#1b8215',  # Green.
-    'gold': '#ffb300', # Yellow.
+    'topaz': '#ffb300', # Yellow.
     'amber': '#cc440d',  # Orange.
     'ruby': '#c93333',  # Red.
     'garnet': '#cc3388',  # Magenta.

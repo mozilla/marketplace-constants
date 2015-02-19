@@ -83,6 +83,10 @@
     "native": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd", 
     "English": "Tamil"
   }, 
+  "yo": {
+    "native": "Yor\u00f9b\u00e1", 
+    "English": "Yoruba"
+  }, 
   "bn-IN": {
     "native": "\u09ac\u09be\u0982\u09b2\u09be (\u09ad\u09be\u09b0\u09a4)", 
     "English": "Bengali (India)"
@@ -132,7 +136,7 @@
     "English": "Esperanto"
   }, 
   "ee": {
-    "native": "\u00c8\u028begbe", 
+    "native": "E\u028be", 
     "English": "Ewe"
   }, 
   "eu": {
@@ -343,6 +347,10 @@
     "native": "\u0939\u093f\u0928\u094d\u0926\u0940", 
     "English": "Hindi"
   }, 
+  "ha": {
+    "native": "Hausa", 
+    "English": "Hausa"
+  }, 
   "he": {
     "native": "\u05e2\u05d1\u05e8\u05d9\u05ea", 
     "English": "Hebrew"
@@ -454,6 +462,10 @@
   "id": {
     "native": "Bahasa Indonesia", 
     "English": "Indonesian"
+  }, 
+  "ig": {
+    "native": "Igbo", 
+    "English": "Igbo"
   }, 
   "sat": {
     "native": "\u0938\u0902\u0924\u093e\u0932\u0940", 

@@ -285,6 +285,7 @@ COUNTRY_DETAILS = {
         'id': 15,
         'mcc': 297,
         'name': 'Montenegro',
+        'ratingsbody': 'PEGI',
         'slug': 'me',
         'special': False,
         'weight': 0
@@ -379,7 +380,7 @@ COUNTRY_DETAILS = {
         'id': 16,
         'mcc': 220,
         'name': 'Serbia',
-        'ratingsbody': None,
+        'ratingsbody': 'PEGI',
         'slug': 'rs',
         'special': False,
         'weight': 0

@@ -2,6 +2,7 @@ from collections import Counter
 import unittest
 
 from mpconstants.countries import COUNTRIES, COUNTRY_DETAILS
+from mpconstants.payments import CURRENCIES
 
 
 class TestCountries(unittest.TestCase):
@@ -19,3 +20,18 @@ class TestCountries(unittest.TestCase):
         ids = [c['slug'] for c in COUNTRY_DETAILS.values()]
         most = Counter(ids).most_common(1)[0]
         assert most[1] == 1, 'Id: %s occurred %s times' % (most[0], most[1])
+
+    def test_unique_mcs(self):
+        # So far, our MCCs have always been unique (and so it's helpful to have
+        # this test to detect copy-pasting errors) but it might not be the
+        # case in the future. Delete this test if you find out it's actually
+        # wrong.
+        ids = [c['mcc'] for c in COUNTRY_DETAILS.values()]
+        most = Counter(ids).most_common(1)[0]
+        assert most[1] == 1, 'Id: %s occurred %s times' % (most[0], most[1])
+
+    def test_valid_currency(self):
+        for country in COUNTRY_DETAILS.values():
+            assert country['default_currency'] in CURRENCIES, (
+                'Country %s has an unkown default currency: %s' %
+                (country['name'], country['default_currency']))

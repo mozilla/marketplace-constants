@@ -53,9 +53,10 @@ Data Sources
 
 The content of these files are generated from multiple sources:
 
-* Python code copied out of the various marketplace repositories
+* Python code from this repository (originally copied out of the various
+  marketplace repositories)
 * JSON code pulled from the Mozilla SVN servers
 
 If you want to update any constants from SVN, or add in any new constants, then
-run the generate script to build out the new files. Compare the differences,
-add or remove any files from git and commit.
+run the generate script to build out the new files once you are done.
+Compare the differences, then add or remove any files from git and commit.

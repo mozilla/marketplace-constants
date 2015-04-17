@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 # List of valid country codes: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
 COUNTRIES = [
     'AFG', 'ALA', 'ALB', 'DZA', 'ASM', 'AND', 'AGO', 'AIA', 'ATA', 'ATG',
@@ -65,6 +66,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'BWA': {
+        'adolescent': True,
+        'default_currency': 'BWP',
+        'default_language': 'en-US',
+        'id': 45,
+        'mcc': 652,
+        'name': 'Botswana',
+        'slug': 'bw',
+        'special': False,
+        'weight': 0
+    },
     'CHL': {
         'adolescent': True,
         'default_currency': 'CLP',
@@ -79,7 +91,7 @@ COUNTRY_DETAILS = {
     },
     'CHN': {
         'adolescent': True,
-        'default_currency': 'RMB',
+        'default_currency': 'CNY',
         'default_language': 'zh-CN',
         'id': 21,
         'mcc': 460,
@@ -87,6 +99,28 @@ COUNTRY_DETAILS = {
         'ratingsbody': None,
         'slug': 'cn',
         'special': True,
+        'weight': 0
+    },
+    'CIV': {
+        'adolescent': True,
+        'default_currency': 'XOF',
+        'default_language': 'en-US',
+        'id': 40,
+        'mcc': 612,
+        'name': u"Côte d'Ivoire",
+        'slug': 'ci',
+        'special': False,
+        'weight': 0
+    },
+    'CMR': {
+        'adolescent': True,
+        'default_currency': 'COP',
+        'default_language': 'en-US',
+        'id': 42,
+        'mcc': 624,
+        'name': 'Cameroon',
+        'slug': 'cm',
+        'special': False,
         'weight': 0
     },
     'COL': {
@@ -148,6 +182,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'EGY': {
+        'adolescent': True,
+        'default_currency': 'EGP',
+        'default_language': 'en-US',
+        'id': 43,
+        'mcc': 602,
+        'name': 'Egypt',
+        'slug': 'eg',
+        'special': False,
+        'weight': 0
+    },
     'ESP': {
         'adolescent': True,
         'default_currency': 'EUR',
@@ -181,6 +226,17 @@ COUNTRY_DETAILS = {
         'name': 'United Kingdom',
         'ratingsbody': 'PEGI',
         'slug': 'uk',
+        'special': False,
+        'weight': 0
+    },
+    'GNB': {
+        'adolescent': True,
+        'default_currency': 'XOF',
+        'default_language': 'en-US',
+        'id': 46,
+        'mcc': 632,
+        'name': 'Guinea-Bissau',
+        'slug': 'gw',
         'special': False,
         'weight': 0
     },
@@ -244,6 +300,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'JOR': {
+        'adolescent': True,
+        'default_currency': 'JOD',
+        'default_language': 'en-US',
+        'id': 51,
+        'mcc': 416,
+        'name': 'Jordan',
+        'slug': 'jo',
+        'special': False,
+        'weight': 0
+    },
     'JPN': {
         'adolescent': True,
         'default_currency': 'JPY',
@@ -266,6 +333,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'MDG': {
+        'adolescent': True,
+        'default_currency': 'MGA',
+        'default_language': 'en-US',
+        'id': 49,
+        'mcc': 646,
+        'name': 'Madagascar',
+        'slug': 'mg',
+        'special': False,
+        'weight': 0
+    },
     'MEX': {
         'adolescent': False,
         'default_currency': 'MXN',
@@ -278,6 +356,28 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'MLI': {
+        'adolescent': True,
+        'default_currency': 'XOF',
+        'default_language': 'en-US',
+        'id': 48,
+        'mcc': 610,
+        'name': 'Mali',
+        'slug': 'ml',
+        'special': False,
+        'weight': 0
+    },
+    'MMR': {
+        'adolescent': True,
+        'default_currency': 'MMK',
+        'default_language': 'en-US',
+        'id': 53,
+        'mcc': 414,
+        'name': 'Myanmar',
+        'slug': 'mm',
+        'special': False,
+        'weight': 0
+    },
     'MNE': {
         'adolescent': True,
         'default_currency': 'EUR',
@@ -287,6 +387,28 @@ COUNTRY_DETAILS = {
         'name': 'Montenegro',
         'ratingsbody': 'PEGI',
         'slug': 'me',
+        'special': False,
+        'weight': 0
+    },
+    'MUS': {
+        'adolescent': True,
+        'default_currency': 'MUR',
+        'default_language': 'en-US',
+        'id': 50,
+        'mcc': 617,
+        'name': 'Mauritius',
+        'slug': 'mu',
+        'special': False,
+        'weight': 0
+    },
+    'NER': {
+        'adolescent': True,
+        'default_currency': 'XOF',
+        'default_language': 'en-US',
+        'id': 52,
+        'mcc': 614,
+        'name': 'Niger',
+        'slug': 'ne',
         'special': False,
         'weight': 0
     },
@@ -373,6 +495,17 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'SEN': {
+        'adolescent': True,
+        'default_currency': 'XOF',
+        'default_language': 'en-US',
+        'id': 41,
+        'mcc': 608,
+        'name': 'Senegal',
+        'slug': 'sn',
+        'special': False,
+        'weight': 0
+    },
     'SRB': {
         'adolescent': True,
         'default_currency': 'RSD',
@@ -382,6 +515,28 @@ COUNTRY_DETAILS = {
         'name': 'Serbia',
         'ratingsbody': 'PEGI',
         'slug': 'rs',
+        'special': False,
+        'weight': 0
+    },
+    'TUN': {
+        'adolescent': True,
+        'default_currency': 'TND',
+        'default_language': 'en-US',
+        'id': 39,
+        'mcc': 605,
+        'name': 'Tunisia',
+        'slug': 'tn',
+        'special': False,
+        'weight': 0
+    },
+    'TZA': {
+        'adolescent': True,
+        'default_currency': 'TZS',
+        'default_language': 'en-US',
+        'id': 44,
+        'mcc': 640,
+        'name': 'Tanzania',
+        'slug': 'tz',
         'special': False,
         'weight': 0
     },
@@ -418,6 +573,17 @@ COUNTRY_DETAILS = {
         'name': 'Venezuela',
         'ratingsbody': 'ESRB',
         'slug': 've',
+        'special': False,
+        'weight': 0
+    },
+    'VUT': {
+        'adolescent': True,
+        'default_currency': 'USD',
+        'default_language': 'en-US',
+        'id': 47,
+        'mcc': 541,
+        'name': 'Vanuatu',
+        'slug': 'vu',
         'special': False,
         'weight': 0
     },

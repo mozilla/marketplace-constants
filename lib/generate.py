@@ -52,8 +52,15 @@ def names(files):
 def trim_data_js(filename, data):
     """Get rid of unneeded data for JS on a file-by-file basis."""
     if filename == 'collection_colors':
-        for k in ['COLLECTION_COLORS_REVERSE', 'COLLECTION_COLORS_CHOICES']:
+        for k in ('COLLECTION_COLORS_REVERSE', 'COLLECTION_COLORS_CHOICES'):
             del data[k]
+    if filename == 'carriers':
+        # We don't need to export full carrier details and dummy carrier
+        # to js for now.
+        for k in ('_carrier', 'CARRIER_DETAILS'):
+            del data[k]
+        data['CARRIER_SLUGS'].remove('carrierless')
+
     return data
 
 
@@ -98,10 +105,10 @@ def get_languages():
     remote = 'https://svn.mozilla.org/libs/product-details/json/languages.json'
     print 'Fetching: languages'
     data = requests.get(remote)
-    (open(js_path('mozilla_languages.json'), 'w')
-          .write(json.dumps(data.json(), indent=2)))
+    (open(js_path('mozilla_languages.json'), 'w').write(
+        json.dumps(data.json(), indent=2)))
     (open(py_path('mozilla_languages.py'), 'w').write(
-          u'LANGUAGES = ' + pprint.pformat(data.json())))
+        u'LANGUAGES = ' + pprint.pformat(data.json())))
 
 
 def get_regions():

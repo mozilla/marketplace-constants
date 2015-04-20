@@ -193,8 +193,8 @@ def build_regions_css():
 
     # Create list of region slugs (e.g., "ar br de fr").
     regions = ''
-    for k, country in countries.COUNTRY_DETAILS.items():
-        region = country['slug'].lower()
+    for region in sorted(c['slug'].lower()
+                         for c in countries.COUNTRY_DETAILS.values()):
         if region == 'in':
             # Escape Stylus in keyword.
             region = '%r' % region

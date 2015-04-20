@@ -2,7 +2,7 @@
     "author": "Andy McKay",
     "name": "marketplace-constants",
     "description": "Common, universal constants for the Firefox Marketplace",
-    "version": "0.6.1",
+    "version": "0.8.0",
     "repository": {
         "url": "git@github.com:andymckay/marketplace-constants.git"
     },

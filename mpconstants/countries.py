@@ -33,7 +33,6 @@ COUNTRY_DETAILS = {
     'ARG': {
         'adolescent': True,
         'default_currency': 'ARS',
-        'default_language': 'es',
         'id': 20,
         'mcc': 722,
         'name': 'Argentina',
@@ -45,7 +44,6 @@ COUNTRY_DETAILS = {
     'BGD': {
         'adolescent': True,
         'default_currency': 'BDT',
-        'default_language': 'en',
         'id': 31,
         'mcc': 470,
         'name': 'Bangladesh',
@@ -57,7 +55,6 @@ COUNTRY_DETAILS = {
     'BRA': {
         'adolescent': False,
         'default_currency': 'BRL',
-        'default_language': 'pt-BR',
         'id': 7,
         'mcc': 724,
         'name': 'Brazil',
@@ -69,7 +66,6 @@ COUNTRY_DETAILS = {
     'BWA': {
         'adolescent': True,
         'default_currency': 'BWP',
-        'default_language': 'en-US',
         'id': 45,
         'mcc': 652,
         'name': 'Botswana',
@@ -80,7 +76,6 @@ COUNTRY_DETAILS = {
     'CHL': {
         'adolescent': True,
         'default_currency': 'CLP',
-        'default_language': 'es',
         'id': 23,
         'mcc': 730,
         'name': 'Chile',
@@ -92,7 +87,6 @@ COUNTRY_DETAILS = {
     'CHN': {
         'adolescent': True,
         'default_currency': 'CNY',
-        'default_language': 'zh-CN',
         'id': 21,
         'mcc': 460,
         'name': 'China',
@@ -104,7 +98,6 @@ COUNTRY_DETAILS = {
     'CIV': {
         'adolescent': True,
         'default_currency': 'XOF',
-        'default_language': 'en-US',
         'id': 40,
         'mcc': 612,
         'name': u"Côte d'Ivoire",
@@ -115,7 +108,6 @@ COUNTRY_DETAILS = {
     'CMR': {
         'adolescent': True,
         'default_currency': 'COP',
-        'default_language': 'en-US',
         'id': 42,
         'mcc': 624,
         'name': 'Cameroon',
@@ -126,7 +118,6 @@ COUNTRY_DETAILS = {
     'COL': {
         'adolescent': False,
         'default_currency': 'COP',
-        'default_language': 'es',
         'id': 9,
         'mcc': 732,
         'name': 'Colombia',
@@ -138,7 +129,6 @@ COUNTRY_DETAILS = {
     'CRI': {
         'adolescent': True,
         'default_currency': 'CRC',
-        'default_language': 'es',
         'id': 27,
         'mcc': 712,
         'name': 'Costa Rica',
@@ -150,7 +140,6 @@ COUNTRY_DETAILS = {
     'CZE': {
         'adolescent': True,
         'default_currency': 'CZK',
-        'default_language': 'cs',
         'id': 34,
         'name': 'Czech Republic',
         'mcc': 230,
@@ -161,7 +150,6 @@ COUNTRY_DETAILS = {
     'DEU': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'de',
         'id': 14,
         'mcc': 262,
         'name': 'Germany',
@@ -173,7 +161,6 @@ COUNTRY_DETAILS = {
     'ECU': {
         'adolescent': True,
         'default_currency': 'USD',
-        'default_language': 'es',
         'id': 26,
         'mcc': 740,
         'name': 'Ecuador',
@@ -185,7 +172,6 @@ COUNTRY_DETAILS = {
     'EGY': {
         'adolescent': True,
         'default_currency': 'EGP',
-        'default_language': 'en-US',
         'id': 43,
         'mcc': 602,
         'name': 'Egypt',
@@ -196,7 +182,6 @@ COUNTRY_DETAILS = {
     'ESP': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'es',
         'id': 8,
         'mcc': 214,
         'name': 'Spain',
@@ -208,7 +193,6 @@ COUNTRY_DETAILS = {
     'FRA': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'fr',
         'id': 30,
         'mcc': 208,
         'name': 'France',
@@ -220,7 +204,6 @@ COUNTRY_DETAILS = {
     'GBR': {
         'adolescent': True,
         'default_currency': 'GBP',
-        'default_language': 'en-US',
         'id': 4,
         'mcc': 235,
         'name': 'United Kingdom',
@@ -232,7 +215,6 @@ COUNTRY_DETAILS = {
     'GNB': {
         'adolescent': True,
         'default_currency': 'XOF',
-        'default_language': 'en-US',
         'id': 46,
         'mcc': 632,
         'name': 'Guinea-Bissau',
@@ -243,7 +225,6 @@ COUNTRY_DETAILS = {
     'GRC': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'el',
         'id': 17,
         'mcc': 202,
         'name': 'Greece',
@@ -255,7 +236,6 @@ COUNTRY_DETAILS = {
     'GTM': {
         'adolescent': True,
         'default_currency': 'GTQ',
-        'default_language': 'es',
         'id': 25,
         'mcc': 704,
         'name': 'Guatemala',
@@ -267,7 +247,6 @@ COUNTRY_DETAILS = {
     'HUN': {
         'adolescent': True,
         'default_currency': 'HUF',
-        'default_language': 'hu',
         'id': 13,
         'mcc': 216,
         'name': 'Hungary',
@@ -279,7 +258,6 @@ COUNTRY_DETAILS = {
     'IND': {
         'adolescent': True,
         'default_currency': 'INR',
-        'default_language': 'en',
         'id': 32,
         'low_memory': True,
         'mcc': 405,
@@ -291,7 +269,6 @@ COUNTRY_DETAILS = {
     'ITA': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'it',
         'id': 22,
         'mcc': 222,
         'name': 'Italy',
@@ -303,7 +280,6 @@ COUNTRY_DETAILS = {
     'JOR': {
         'adolescent': True,
         'default_currency': 'JOD',
-        'default_language': 'en-US',
         'id': 51,
         'mcc': 416,
         'name': 'Jordan',
@@ -314,7 +290,6 @@ COUNTRY_DETAILS = {
     'JPN': {
         'adolescent': True,
         'default_currency': 'JPY',
-        'default_language': 'ja',
         'id': 33,
         'mcc': 440,
         'name': 'Japan',
@@ -325,7 +300,6 @@ COUNTRY_DETAILS = {
     'LTU': {
         'adolescent': True,
         'default_currency': 'LTL',
-        'default_language': 'lt',
         'id': 38,
         'mcc': 370,
         'name': 'Lithuania',
@@ -336,7 +310,6 @@ COUNTRY_DETAILS = {
     'MDG': {
         'adolescent': True,
         'default_currency': 'MGA',
-        'default_language': 'en-US',
         'id': 49,
         'mcc': 646,
         'name': 'Madagascar',
@@ -347,7 +320,6 @@ COUNTRY_DETAILS = {
     'MEX': {
         'adolescent': False,
         'default_currency': 'MXN',
-        'default_language': 'es',
         'id': 12,
         'mcc': 334,
         'name': 'Mexico',
@@ -359,7 +331,6 @@ COUNTRY_DETAILS = {
     'MLI': {
         'adolescent': True,
         'default_currency': 'XOF',
-        'default_language': 'en-US',
         'id': 48,
         'mcc': 610,
         'name': 'Mali',
@@ -370,7 +341,6 @@ COUNTRY_DETAILS = {
     'MMR': {
         'adolescent': True,
         'default_currency': 'MMK',
-        'default_language': 'en-US',
         'id': 53,
         'mcc': 414,
         'name': 'Myanmar',
@@ -381,7 +351,6 @@ COUNTRY_DETAILS = {
     'MNE': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'srp',
         'id': 15,
         'mcc': 297,
         'name': 'Montenegro',
@@ -393,7 +362,6 @@ COUNTRY_DETAILS = {
     'MUS': {
         'adolescent': True,
         'default_currency': 'MUR',
-        'default_language': 'en-US',
         'id': 50,
         'mcc': 617,
         'name': 'Mauritius',
@@ -404,7 +372,6 @@ COUNTRY_DETAILS = {
     'NER': {
         'adolescent': True,
         'default_currency': 'XOF',
-        'default_language': 'en-US',
         'id': 52,
         'mcc': 614,
         'name': 'Niger',
@@ -415,7 +382,6 @@ COUNTRY_DETAILS = {
     'NIC': {
         'adolescent': True,
         'default_currency': 'NIO',
-        'default_language': 'es',
         'id': 29,
         'mcc': 710,
         'name': 'Nicaragua',
@@ -427,7 +393,6 @@ COUNTRY_DETAILS = {
     'PAN': {
         'adolescent': True,
         'default_currency': 'USD',
-        'default_language': 'es',
         'id': 28,
         'mcc': 714,
         'name': 'Panama',
@@ -439,7 +404,6 @@ COUNTRY_DETAILS = {
     'PER': {
         'adolescent': False,
         'default_currency': 'PEN',
-        'default_language': 'es',
         'id': 18,
         'mcc': 716,
         'name': 'Peru',
@@ -451,7 +415,6 @@ COUNTRY_DETAILS = {
     'PHL': {
         'adolescent': True,
         'default_currency': 'PHP',
-        'default_language': 'en',
         'id': 35,
         'low_memory': True,
         'mcc': 515,
@@ -463,7 +426,6 @@ COUNTRY_DETAILS = {
     'POL': {
         'adolescent': True,
         'default_currency': 'PLN',
-        'default_language': 'pl',
         'id': 11,
         'mcc': 260,
         'name': 'Poland',
@@ -475,7 +437,6 @@ COUNTRY_DETAILS = {
     'RUS': {
         'adolescent': True,
         'default_currency': 'EUR',
-        'default_language': 'ru',
         'id': 36,
         'mcc': 250,
         'name': 'Russia',
@@ -486,7 +447,6 @@ COUNTRY_DETAILS = {
     'SLV': {
         'adolescent': True,
         'default_currency': 'USD',
-        'default_language': 'es',
         'id': 24,
         'mcc': 706,
         'name': 'El Salvador',
@@ -498,7 +458,6 @@ COUNTRY_DETAILS = {
     'SEN': {
         'adolescent': True,
         'default_currency': 'XOF',
-        'default_language': 'en-US',
         'id': 41,
         'mcc': 608,
         'name': 'Senegal',
@@ -509,7 +468,6 @@ COUNTRY_DETAILS = {
     'SRB': {
         'adolescent': True,
         'default_currency': 'RSD',
-        'default_language': 'sr',
         'id': 16,
         'mcc': 220,
         'name': 'Serbia',
@@ -521,7 +479,6 @@ COUNTRY_DETAILS = {
     'TUN': {
         'adolescent': True,
         'default_currency': 'TND',
-        'default_language': 'en-US',
         'id': 39,
         'mcc': 605,
         'name': 'Tunisia',
@@ -532,7 +489,6 @@ COUNTRY_DETAILS = {
     'TZA': {
         'adolescent': True,
         'default_currency': 'TZS',
-        'default_language': 'en-US',
         'id': 44,
         'mcc': 640,
         'name': 'Tanzania',
@@ -543,7 +499,6 @@ COUNTRY_DETAILS = {
     'URY': {
         'adolescent': False,
         'default_currency': 'UYU',
-        'default_language': 'es',
         'id': 19,
         'mcc': 748,
         'name': 'Uruguay',
@@ -555,7 +510,6 @@ COUNTRY_DETAILS = {
     'USA': {
         'adolescent': True,
         'default_currency': 'USD',
-        'default_language': 'en-US',
         'id': 2,
         'mcc': 310,
         'name': 'United States',
@@ -567,7 +521,6 @@ COUNTRY_DETAILS = {
     'VEN': {
         'adolescent': False,
         'default_currency': 'USD',
-        'default_language': 'es',
         'id': 10,
         'mcc': 734,
         'name': 'Venezuela',
@@ -579,7 +532,6 @@ COUNTRY_DETAILS = {
     'VUT': {
         'adolescent': True,
         'default_currency': 'USD',
-        'default_language': 'en-US',
         'id': 47,
         'mcc': 541,
         'name': 'Vanuatu',
@@ -590,7 +542,6 @@ COUNTRY_DETAILS = {
     'ZAF': {
         'adolescent': False,
         'default_currency': 'ZAR',
-        'default_language': 'en-US',
         'id': 37,
         'mcc': 655,
         'name': 'South Africa',

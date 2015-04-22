@@ -73,6 +73,16 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'CAF': {
+        'adolescent': True,
+        'default_currency': 'XAF',
+        'id': 54,
+        'mcc': 623,
+        'name': 'Central African Republic',
+        'slug': 'cf',
+        'special': False,
+        'weight': 0
+    },
     'CHL': {
         'adolescent': True,
         'default_currency': 'CLP',
@@ -212,6 +222,16 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'GIN':  {
+        'adolescent': True,
+        'default_currency': 'GNF',
+        'id': 55,
+        'mcc': 611,
+        'name': 'Guinea-Conakry',
+        'slug': 'gn',
+        'special': False,
+        'weight': 0
+    },
     'GNB': {
         'adolescent': True,
         'default_currency': 'XOF',
@@ -294,6 +314,16 @@ COUNTRY_DETAILS = {
         'mcc': 440,
         'name': 'Japan',
         'slug': 'jp',
+        'special': False,
+        'weight': 0
+    },
+    'KEN': {
+        'adolescent': True,
+        'default_currency': 'KES',
+        'id': 56,
+        'mcc': 639,
+        'name': 'Kenya',
+        'slug': 'ke',
         'special': False,
         'weight': 0
     },

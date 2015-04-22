@@ -137,7 +137,7 @@ def build_regions_js():
     """
     Generate a supported regions modules for Marketplace frontend projects.
     Maps from region slug to gettexted region names.
-    ex: {'fr': gettext('France'),...}
+    ex: {"fr": gettext("France"),...}
     """
     js_module_template = open(lib_path('templates/regions.js'), 'r').read()
     countries = name(glob.glob(py_path('countries.py'))[0])
@@ -169,10 +169,11 @@ def build_regions_js():
     # Serialize.
     data = json.dumps(data)
 
-    # Unquote the gettexts.
-    data = (data.replace('"gettext', 'gettext')
-                .replace(')",', '),')
-                .replace(')"}}', ')}}'))
+    # Unquote the gettexts. "gettext('France')" -> gettext("France"). It's
+    # important to keep gettext calls with double quotes, since we have escape
+    # sequences in them for unicode stuff.
+    pattern = re.compile(r'"gettext\(\'(.*?)\'\)"')
+    data = pattern.sub(r'gettext("\1")', data)
 
     # Write the data.
     output = js_path('regions.js')

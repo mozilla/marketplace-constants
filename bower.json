@@ -5,7 +5,7 @@
     ],
     "name": "marketplace-constants",
     "description": "Common, universal constants for the Firefox Marketplace",
-    "version": "0.9.1",
+    "version": "0.10.0",
     "ignore": [
         "**/*.py",
         "**/*.txt",

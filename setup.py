@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='marketplace-constants',
-    version='0.9.1',
+    version='0.10.0',
     description='Standard constants for the marketplace',
     long_description=open('README.md').read(),
     author='Andy McKay',

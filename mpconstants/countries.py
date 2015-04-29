@@ -516,6 +516,16 @@ COUNTRY_DETAILS = {
         'special': False,
         'weight': 0
     },
+    'TWN': {
+        'adolescent': True,
+        'default_currency': 'TWD',
+        'id': 57,
+        'mcc': 466,
+        'name': 'Taiwan',
+        'slug': 'tw',
+        'special': False,
+        'weight': 0
+    },
     'TZA': {
         'adolescent': True,
         'default_currency': 'TZS',

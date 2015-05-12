@@ -139,20 +139,21 @@ def build_regions_js():
     Maps from region slug to gettexted region names.
     ex: {"fr": gettext("France"),...}
     """
-    js_module_template = open(lib_path('templates/regions.js'), 'r').read()
+    js_module_template = open(lib_path('templates/umd.js'), 'r').read()
     countries = name(glob.glob(py_path('countries.py'))[0])
     countries = importlib.import_module(countries)
 
-    # REGION_CHOICES_SLUG: Region slug to gettext mapping.
+    # REGION_CHOICES_SLUG: Region slug to name (non-translated - if you need
+    # translations, better directly call the region API instead of having
+    # 250+ translated names in your javascript).
     data = {
         'REGION_CHOICES_SLUG': {
-            'restofworld': "gettext('Rest of World')"
+            'restofworld': 'Rest of World'
         },
         'MOBILE_CODES': {}
     }
     for k, country in countries.COUNTRY_DETAILS.items():
-        data['REGION_CHOICES_SLUG'][country['slug'].lower()] = (
-            "gettext('%s')" % country['name'])
+        data['REGION_CHOICES_SLUG'][country['slug'].lower()] = country['name']
 
     # MOBILE_CODES: Mobile code to region slug mapping.
     for alpha3, country in countries.COUNTRY_DETAILS.items():
@@ -168,12 +169,6 @@ def build_regions_js():
 
     # Serialize.
     data = json.dumps(data)
-
-    # Unquote the gettexts. "gettext('France')" -> gettext("France"). It's
-    # important to keep gettext calls with double quotes, since we have escape
-    # sequences in them for unicode stuff.
-    pattern = re.compile(r'"gettext\(\'(.*?)\'\)"')
-    data = pattern.sub(r'gettext("\1")', data)
 
     # Write the data.
     output = js_path('regions.js')
@@ -196,8 +191,8 @@ def build_regions_css():
     regions = ''
     for region in sorted(c['slug'].lower()
                          for c in countries.COUNTRY_DETAILS.values()):
-        if region == 'in':
-            # Escape Stylus in keyword.
+        if region in ('in', 'is'):
+            # Escape Stylus in/is keywords.
             region = '%r' % region
         regions += ' ' + region
     regions += ' restofworld;'

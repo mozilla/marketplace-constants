@@ -30,7 +30,7 @@ COUNTRIES = [
 
 COUNTRY_DETAILS = {
     'ABW': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 69,
         'name': u'Aruba',
         'ratingsbody': None,
@@ -39,7 +39,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AFG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 58,
         'name': u'Afghanistan',
         'ratingsbody': None,
@@ -48,7 +48,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AGO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 64,
         'name': u'Angola',
         'ratingsbody': None,
@@ -57,7 +57,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AIA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 65,
         'name': u'Anguilla',
         'ratingsbody': None,
@@ -66,16 +66,16 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ALA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 59,
-        'name': u'Åland Islands',
+        'name': u'\xc5land Islands',
         'ratingsbody': None,
         'slug': 'ax',
         'special': False,
         'weight': 0
     },
     'ALB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 60,
         'name': u'Albania',
         'ratingsbody': None,
@@ -84,7 +84,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AND': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 63,
         'name': u'Andorra',
         'ratingsbody': None,
@@ -93,7 +93,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ARE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 241,
         'name': u'United Arab Emirates',
         'ratingsbody': None,
@@ -112,7 +112,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ARM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 68,
         'name': u'Armenia',
         'ratingsbody': None,
@@ -121,7 +121,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ASM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 62,
         'name': u'American Samoa',
         'ratingsbody': None,
@@ -130,7 +130,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ATA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 66,
         'name': u'Antarctica',
         'ratingsbody': None,
@@ -139,7 +139,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ATF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 120,
         'name': u'French Southern Territories',
         'ratingsbody': None,
@@ -148,7 +148,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ATG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 67,
         'name': u'Antigua and Barbuda',
         'ratingsbody': None,
@@ -157,7 +157,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AUS': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 70,
         'name': u'Australia',
         'ratingsbody': None,
@@ -166,7 +166,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AUT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 71,
         'name': u'Austria',
         'ratingsbody': None,
@@ -175,7 +175,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'AZE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 72,
         'name': u'Azerbaijan',
         'ratingsbody': None,
@@ -184,7 +184,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BDI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 90,
         'name': u'Burundi',
         'ratingsbody': None,
@@ -193,7 +193,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BEL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 77,
         'name': u'Belgium',
         'ratingsbody': None,
@@ -202,7 +202,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BEN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 79,
         'name': u'Benin',
         'ratingsbody': None,
@@ -211,7 +211,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BES': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 252,
         'name': u'Bonaire, Sint Eustatius and Saba',
         'ratingsbody': None,
@@ -220,7 +220,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BFA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 89,
         'name': u'Burkina Faso',
         'ratingsbody': None,
@@ -239,7 +239,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BGR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 88,
         'name': u'Bulgaria',
         'ratingsbody': None,
@@ -248,7 +248,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BHR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 74,
         'name': u'Bahrain',
         'ratingsbody': None,
@@ -257,7 +257,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BHS': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 73,
         'name': u'Bahamas',
         'ratingsbody': None,
@@ -266,7 +266,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BIH': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 84,
         'name': u'Bosnia and Herzegovina',
         'ratingsbody': None,
@@ -275,7 +275,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BLM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 253,
         'name': u'Saint Barthélemy',
         'ratingsbody': None,
@@ -284,7 +284,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BLR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 76,
         'name': u'Belarus',
         'ratingsbody': None,
@@ -293,7 +293,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BLZ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 78,
         'name': u'Belize',
         'ratingsbody': None,
@@ -302,7 +302,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BMU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 80,
         'name': u'Bermuda',
         'ratingsbody': None,
@@ -311,7 +311,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BOL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 82,
         'name': u'Bolivia, Plurinational State of',
         'ratingsbody': None,
@@ -330,7 +330,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BRB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 75,
         'name': u'Barbados',
         'ratingsbody': None,
@@ -339,7 +339,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BRN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 87,
         'name': u'Brunei Darussalam',
         'ratingsbody': None,
@@ -348,7 +348,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BTN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 81,
         'name': u'Bhutan',
         'ratingsbody': None,
@@ -357,7 +357,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'BVT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 85,
         'name': u'Bouvet Island',
         'ratingsbody': None,
@@ -384,7 +384,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CAN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 92,
         'name': u'Canada',
         'ratingsbody': None,
@@ -393,7 +393,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CCK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 97,
         'name': u'Cocos (Keeling) Islands',
         'ratingsbody': None,
@@ -402,7 +402,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CHE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 226,
         'name': u'Switzerland',
         'ratingsbody': None,
@@ -449,7 +449,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'COD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 100,
         'name': u'Congo, Democratic Republic of the',
         'ratingsbody': None,
@@ -458,7 +458,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'COG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 99,
         'name': u'Congo',
         'ratingsbody': None,
@@ -467,7 +467,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'COK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 101,
         'name': u'Cook Islands',
         'ratingsbody': None,
@@ -486,7 +486,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'COM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 98,
         'name': u'Comoros',
         'ratingsbody': None,
@@ -495,7 +495,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CPV': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 93,
         'name': u'Cabo Verde',
         'ratingsbody': None,
@@ -514,7 +514,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CUB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 103,
         'name': u'Cuba',
         'ratingsbody': None,
@@ -523,16 +523,16 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CUW': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 254,
-        'name': u'Curaçao',
+        'name': u'Cura\xe7ao',
         'ratingsbody': None,
         'slug': 'cw',
         'special': False,
         'weight': 0
     },
     'CXR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 96,
         'name': u'Christmas Island',
         'ratingsbody': None,
@@ -541,7 +541,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CYM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 94,
         'name': u'Cayman Islands',
         'ratingsbody': None,
@@ -550,7 +550,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'CYP': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 105,
         'name': u'Cyprus',
         'ratingsbody': None,
@@ -578,7 +578,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'DJI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 107,
         'name': u'Djibouti',
         'ratingsbody': None,
@@ -587,7 +587,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'DMA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 108,
         'name': u'Dominica',
         'ratingsbody': None,
@@ -596,7 +596,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'DNK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 106,
         'name': u'Denmark',
         'ratingsbody': None,
@@ -605,7 +605,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'DOM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 109,
         'name': u'Dominican Republic',
         'ratingsbody': None,
@@ -614,7 +614,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'DZA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 61,
         'name': u'Algeria',
         'ratingsbody': None,
@@ -642,7 +642,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ERI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 111,
         'name': u'Eritrea',
         'ratingsbody': None,
@@ -651,7 +651,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ESH': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 248,
         'name': u'Western Sahara',
         'ratingsbody': None,
@@ -670,7 +670,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'EST': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 112,
         'name': u'Estonia',
         'ratingsbody': None,
@@ -679,7 +679,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ETH': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 113,
         'name': u'Ethiopia',
         'ratingsbody': None,
@@ -688,7 +688,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'FIN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 117,
         'name': u'Finland',
         'ratingsbody': None,
@@ -697,7 +697,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'FJI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 116,
         'name': u'Fiji',
         'ratingsbody': None,
@@ -706,7 +706,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'FLK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 114,
         'name': u'Falkland Islands (Malvinas)',
         'ratingsbody': None,
@@ -725,7 +725,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'FRO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 115,
         'name': u'Faroe Islands',
         'ratingsbody': None,
@@ -734,7 +734,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'FSM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 168,
         'name': u'Micronesia, Federated States of',
         'ratingsbody': None,
@@ -743,7 +743,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GAB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 121,
         'name': u'Gabon',
         'ratingsbody': None,
@@ -762,7 +762,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GEO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 123,
         'name': u'Georgia',
         'ratingsbody': None,
@@ -771,7 +771,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GGY': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 130,
         'name': u'Guernsey',
         'ratingsbody': None,
@@ -780,7 +780,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GHA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 124,
         'name': u'Ghana',
         'ratingsbody': None,
@@ -789,7 +789,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GIB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 125,
         'name': u'Gibraltar',
         'ratingsbody': None,
@@ -807,7 +807,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GLP': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 128,
         'name': u'Guadeloupe',
         'ratingsbody': None,
@@ -816,7 +816,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GMB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 122,
         'name': u'Gambia',
         'ratingsbody': None,
@@ -834,7 +834,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GNQ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 110,
         'name': u'Equatorial Guinea',
         'ratingsbody': None,
@@ -853,7 +853,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GRD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 127,
         'name': u'Grenada',
         'ratingsbody': None,
@@ -862,7 +862,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GRL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 126,
         'name': u'Greenland',
         'ratingsbody': None,
@@ -881,7 +881,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GUF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 118,
         'name': u'French Guiana',
         'ratingsbody': None,
@@ -890,7 +890,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GUM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 129,
         'name': u'Guam',
         'ratingsbody': None,
@@ -899,7 +899,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'GUY': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 131,
         'name': u'Guyana',
         'ratingsbody': None,
@@ -908,7 +908,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'HKG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 136,
         'name': u'Hong Kong',
         'ratingsbody': None,
@@ -917,7 +917,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'HMD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 133,
         'name': u'Heard Island and McDonald Islands',
         'ratingsbody': None,
@@ -926,7 +926,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'HND': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 135,
         'name': u'Honduras',
         'ratingsbody': None,
@@ -935,7 +935,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'HRV': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 102,
         'name': u'Croatia',
         'ratingsbody': None,
@@ -944,7 +944,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'HTI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 132,
         'name': u'Haiti',
         'ratingsbody': None,
@@ -963,7 +963,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'IDN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 138,
         'name': u'Indonesia',
         'ratingsbody': None,
@@ -972,7 +972,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'IMN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 141,
         'name': u'Isle of Man',
         'ratingsbody': None,
@@ -991,7 +991,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'IOT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 86,
         'name': u'British Indian Ocean Territory',
         'ratingsbody': None,
@@ -1000,7 +1000,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'IRL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 140,
         'name': u'Ireland',
         'ratingsbody': None,
@@ -1009,7 +1009,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'IRQ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 139,
         'name': u'Iraq',
         'ratingsbody': None,
@@ -1018,7 +1018,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ISL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 137,
         'name': u'Iceland',
         'ratingsbody': None,
@@ -1027,7 +1027,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ISR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 142,
         'name': u'Israel',
         'ratingsbody': None,
@@ -1046,7 +1046,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'JAM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 143,
         'name': u'Jamaica',
         'ratingsbody': None,
@@ -1055,7 +1055,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'JEY': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 144,
         'name': u'Jersey',
         'ratingsbody': None,
@@ -1082,7 +1082,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KAZ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 145,
         'name': u'Kazakhstan',
         'ratingsbody': None,
@@ -1100,7 +1100,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KGZ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 149,
         'name': u'Kyrgyzstan',
         'ratingsbody': None,
@@ -1109,7 +1109,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KHM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 91,
         'name': u'Cambodia',
         'ratingsbody': None,
@@ -1118,7 +1118,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KIR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 146,
         'name': u'Kiribati',
         'ratingsbody': None,
@@ -1127,7 +1127,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KNA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 201,
         'name': u'Saint Kitts and Nevis',
         'ratingsbody': None,
@@ -1136,7 +1136,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KOR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 147,
         'name': u'Korea, Republic of',
         'ratingsbody': None,
@@ -1145,7 +1145,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'KWT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 148,
         'name': u'Kuwait',
         'ratingsbody': None,
@@ -1154,7 +1154,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LAO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 150,
         'name': u"Lao People's Democratic Republic",
         'ratingsbody': None,
@@ -1163,7 +1163,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LBN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 152,
         'name': u'Lebanon',
         'ratingsbody': None,
@@ -1172,7 +1172,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LBR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 154,
         'name': u'Liberia',
         'ratingsbody': None,
@@ -1181,7 +1181,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LBY': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 155,
         'name': u'Libya',
         'ratingsbody': None,
@@ -1190,7 +1190,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LCA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 202,
         'name': u'Saint Lucia',
         'ratingsbody': None,
@@ -1199,7 +1199,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LIE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 156,
         'name': u'Liechtenstein',
         'ratingsbody': None,
@@ -1208,7 +1208,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LKA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 220,
         'name': u'Sri Lanka',
         'ratingsbody': None,
@@ -1217,7 +1217,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LSO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 153,
         'name': u'Lesotho',
         'ratingsbody': None,
@@ -1235,7 +1235,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LUX': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 157,
         'name': u'Luxembourg',
         'ratingsbody': None,
@@ -1244,7 +1244,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'LVA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 151,
         'name': u'Latvia',
         'ratingsbody': None,
@@ -1253,7 +1253,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MAC': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 158,
         'name': u'Macao',
         'ratingsbody': None,
@@ -1262,7 +1262,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MAF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 255,
         'mcc': 340,
         'name': u'Saint Martin (French part)',
@@ -1272,7 +1272,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MAR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 173,
         'name': u'Morocco',
         'ratingsbody': None,
@@ -1281,7 +1281,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MCO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 170,
         'name': u'Monaco',
         'ratingsbody': None,
@@ -1290,7 +1290,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MDA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 169,
         'name': u'Moldova, Republic of',
         'ratingsbody': None,
@@ -1308,7 +1308,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MDV': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 162,
         'name': u'Maldives',
         'ratingsbody': None,
@@ -1327,7 +1327,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MHL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 164,
         'name': u'Marshall Islands',
         'ratingsbody': None,
@@ -1336,7 +1336,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MKD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 159,
         'name': u'Macedonia, the former Yugoslav Republic of',
         'ratingsbody': None,
@@ -1354,7 +1354,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MLT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 163,
         'name': u'Malta',
         'ratingsbody': None,
@@ -1382,7 +1382,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MNG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 171,
         'name': u'Mongolia',
         'ratingsbody': None,
@@ -1391,7 +1391,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MNP': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 184,
         'name': u'Northern Mariana Islands',
         'ratingsbody': None,
@@ -1400,7 +1400,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MOZ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 174,
         'name': u'Mozambique',
         'ratingsbody': None,
@@ -1409,7 +1409,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MRT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 166,
         'name': u'Mauritania',
         'ratingsbody': None,
@@ -1418,7 +1418,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MSR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 172,
         'name': u'Montserrat',
         'ratingsbody': None,
@@ -1427,7 +1427,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MTQ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 165,
         'name': u'Martinique',
         'ratingsbody': None,
@@ -1445,7 +1445,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MWI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 160,
         'name': u'Malawi',
         'ratingsbody': None,
@@ -1454,7 +1454,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MYS': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 161,
         'name': u'Malaysia',
         'ratingsbody': None,
@@ -1463,7 +1463,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'MYT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 167,
         'name': u'Mayotte',
         'ratingsbody': None,
@@ -1472,7 +1472,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NAM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 175,
         'name': u'Namibia',
         'ratingsbody': None,
@@ -1481,7 +1481,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NCL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 179,
         'name': u'New Caledonia',
         'ratingsbody': None,
@@ -1499,7 +1499,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NFK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 183,
         'name': u'Norfolk Island',
         'ratingsbody': None,
@@ -1508,7 +1508,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NGA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 181,
         'name': u'Nigeria',
         'ratingsbody': None,
@@ -1527,7 +1527,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NIU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 182,
         'name': u'Niue',
         'ratingsbody': None,
@@ -1536,7 +1536,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NLD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 178,
         'name': u'Netherlands',
         'ratingsbody': None,
@@ -1545,7 +1545,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NOR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 185,
         'name': u'Norway',
         'ratingsbody': None,
@@ -1554,7 +1554,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NPL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 177,
         'name': u'Nepal',
         'ratingsbody': None,
@@ -1563,7 +1563,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NRU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 176,
         'name': u'Nauru',
         'ratingsbody': None,
@@ -1572,7 +1572,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'NZL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 180,
         'name': u'New Zealand',
         'ratingsbody': None,
@@ -1581,7 +1581,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'OMN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 186,
         'name': u'Oman',
         'ratingsbody': None,
@@ -1590,7 +1590,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PAK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 187,
         'name': u'Pakistan',
         'ratingsbody': None,
@@ -1609,7 +1609,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PCN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 192,
         'name': u'Pitcairn',
         'ratingsbody': None,
@@ -1638,7 +1638,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PLW': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 188,
         'name': u'Palau',
         'ratingsbody': None,
@@ -1647,7 +1647,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PNG': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 190,
         'name': u'Papua New Guinea',
         'ratingsbody': None,
@@ -1666,7 +1666,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PRI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 194,
         'name': u'Puerto Rico',
         'ratingsbody': None,
@@ -1675,7 +1675,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PRT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 193,
         'name': u'Portugal',
         'ratingsbody': None,
@@ -1684,7 +1684,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PRY': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 191,
         'name': u'Paraguay',
         'ratingsbody': None,
@@ -1693,7 +1693,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PSE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 189,
         'name': u'Palestine, State of',
         'ratingsbody': None,
@@ -1702,7 +1702,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'PYF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 119,
         'name': u'French Polynesia',
         'ratingsbody': None,
@@ -1711,7 +1711,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'QAT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 195,
         'name': u'Qatar',
         'ratingsbody': None,
@@ -1720,16 +1720,16 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'REU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 196,
-        'name': u'Réunion',
+        'name': u'R\xe9union',
         'ratingsbody': None,
         'slug': 're',
         'special': False,
         'weight': 0
     },
     'ROU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 197,
         'name': u'Romania',
         'ratingsbody': None,
@@ -1747,7 +1747,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'RWA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 198,
         'name': u'Rwanda',
         'ratingsbody': None,
@@ -1756,7 +1756,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SAU': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 209,
         'name': u'Saudi Arabia',
         'ratingsbody': None,
@@ -1765,7 +1765,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SDN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 221,
         'name': u'Sudan',
         'ratingsbody': None,
@@ -1783,7 +1783,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SGP': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 212,
         'name': u'Singapore',
         'ratingsbody': None,
@@ -1792,7 +1792,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SGS': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 218,
         'name': u'South Georgia and the South Sandwich Islands',
         'ratingsbody': None,
@@ -1801,7 +1801,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SHN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 200,
         'name': u'Saint Helena, Ascension and Tristan da Cunha',
         'ratingsbody': None,
@@ -1810,7 +1810,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SJM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 223,
         'name': u'Svalbard and Jan Mayen',
         'ratingsbody': None,
@@ -1819,7 +1819,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SLB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 216,
         'name': u'Solomon Islands',
         'ratingsbody': None,
@@ -1828,7 +1828,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SLE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 211,
         'name': u'Sierra Leone',
         'ratingsbody': None,
@@ -1847,7 +1847,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SMR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 207,
         'name': u'San Marino',
         'ratingsbody': None,
@@ -1856,7 +1856,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SOM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 217,
         'name': u'Somalia',
         'ratingsbody': None,
@@ -1865,7 +1865,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SPM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 204,
         'name': u'Saint Pierre and Miquelon',
         'ratingsbody': None,
@@ -1884,7 +1884,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SSD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 219,
         'name': u'South Sudan',
         'ratingsbody': None,
@@ -1893,7 +1893,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'STP': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 208,
         'name': u'Sao Tome and Principe',
         'ratingsbody': None,
@@ -1902,7 +1902,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SUR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 222,
         'name': u'Suriname',
         'ratingsbody': None,
@@ -1911,7 +1911,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SVK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 214,
         'name': u'Slovakia',
         'ratingsbody': None,
@@ -1920,7 +1920,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SVN': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 215,
         'name': u'Slovenia',
         'ratingsbody': None,
@@ -1929,7 +1929,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SWE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 225,
         'name': u'Sweden',
         'ratingsbody': None,
@@ -1938,7 +1938,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SWZ': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 224,
         'name': u'Swaziland',
         'ratingsbody': None,
@@ -1947,7 +1947,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SXM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 256,
         'name': u'Sint Maarten (Dutch part)',
         'ratingsbody': None,
@@ -1956,7 +1956,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SYC': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 210,
         'name': u'Seychelles',
         'ratingsbody': None,
@@ -1965,7 +1965,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'SYR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 227,
         'name': u'Syrian Arab Republic',
         'ratingsbody': None,
@@ -1974,7 +1974,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TCA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 237,
         'name': u'Turks and Caicos Islands',
         'ratingsbody': None,
@@ -1983,7 +1983,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TCD': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 95,
         'name': u'Chad',
         'ratingsbody': None,
@@ -1992,7 +1992,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TGO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 231,
         'name': u'Togo',
         'ratingsbody': None,
@@ -2001,7 +2001,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'THA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 229,
         'name': u'Thailand',
         'ratingsbody': None,
@@ -2010,7 +2010,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TJK': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 228,
         'name': u'Tajikistan',
         'ratingsbody': None,
@@ -2019,7 +2019,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TKL': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 232,
         'name': u'Tokelau',
         'ratingsbody': None,
@@ -2028,7 +2028,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TKM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 236,
         'name': u'Turkmenistan',
         'ratingsbody': None,
@@ -2037,7 +2037,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TLS': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 230,
         'name': u'Timor-Leste',
         'ratingsbody': None,
@@ -2046,7 +2046,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TON': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 233,
         'name': u'Tonga',
         'ratingsbody': None,
@@ -2055,7 +2055,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TTO': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 234,
         'name': u'Trinidad and Tobago',
         'ratingsbody': None,
@@ -2073,7 +2073,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TUR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 235,
         'name': u'Turkey',
         'ratingsbody': None,
@@ -2082,7 +2082,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'TUV': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 238,
         'name': u'Tuvalu',
         'ratingsbody': None,
@@ -2109,7 +2109,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'UGA': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 239,
         'name': u'Uganda',
         'ratingsbody': None,
@@ -2118,7 +2118,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'UKR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 240,
         'name': u'Ukraine',
         'ratingsbody': None,
@@ -2127,7 +2127,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'UMI': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 257,
         'name': u'United States Minor Outlying Islands',
         'ratingsbody': None,
@@ -2156,7 +2156,7 @@ COUNTRY_DETAILS = {
         'weight': 1
     },
     'UZB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 243,
         'name': u'Uzbekistan',
         'ratingsbody': None,
@@ -2165,7 +2165,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'VAT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 134,
         'name': u'Holy See',
         'ratingsbody': None,
@@ -2174,7 +2174,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'VCT': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 205,
         'name': u'Saint Vincent and the Grenadines',
         'ratingsbody': None,
@@ -2193,7 +2193,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'VGB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 245,
         'name': u'Virgin Islands, British',
         'ratingsbody': None,
@@ -2202,7 +2202,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'VIR': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 246,
         'name': u'Virgin Islands, U.S.',
         'ratingsbody': None,
@@ -2211,7 +2211,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'VNM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 244,
         'name': u'Viet Nam',
         'ratingsbody': None,
@@ -2229,7 +2229,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'WLF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 247,
         'name': u'Wallis and Futuna',
         'ratingsbody': None,
@@ -2238,7 +2238,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'WSM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 206,
         'name': u'Samoa',
         'ratingsbody': None,
@@ -2247,7 +2247,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'YEM': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 249,
         'name': u'Yemen',
         'ratingsbody': None,
@@ -2256,7 +2256,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ZAF': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 37,
         'mcc': 655,
         'name': u'South Africa',
@@ -2266,7 +2266,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ZMB': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 250,
         'name': u'Zambia',
         'ratingsbody': None,
@@ -2275,7 +2275,7 @@ COUNTRY_DETAILS = {
         'weight': 0
     },
     'ZWE': {
-        'adolescent': False,
+        'adolescent': True,
         'id': 251,
         'name': u'Zimbabwe',
         'ratingsbody': None,

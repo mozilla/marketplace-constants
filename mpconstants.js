@@ -1,6 +1,3 @@
-var fs = require('fs');
-
-
-module.exports = function(file) {
-  return require('./dist/js/' + file);
+module.exports = {
+  regions: require('./dist/js/regions')
 };

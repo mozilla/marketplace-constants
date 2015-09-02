@@ -1731,6 +1731,7 @@ COUNTRY_DETAILS = {
     'ROU': {
         'adolescent': True,
         'id': 197,
+        'mcc': 226,
         'name': u'Romania',
         'ratingsbody': None,
         'slug': 'ro',

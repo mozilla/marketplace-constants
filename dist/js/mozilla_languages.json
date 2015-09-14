@@ -51,6 +51,10 @@
     "native": "\u0e9e\u0eb2\u0eaa\u0eb2\u0ea5\u0eb2\u0ea7", 
     "English": "Lao"
   }, 
+  "nso": {
+    "native": "Sepedi", 
+    "English": "Northern Sotho"
+  }, 
   "tr": {
     "native": "T\u00fcrk\u00e7e", 
     "English": "Turkish"
@@ -70,6 +74,10 @@
   "lt": {
     "native": "lietuvi\u0173 kalba", 
     "English": "Lithuanian"
+  }, 
+  "tsz": {
+    "native": "Pur\u00e9pecha", 
+    "English": "Pur\u00e9pecha"
   }, 
   "th": {
     "native": "\u0e44\u0e17\u0e22", 
@@ -180,7 +188,7 @@
     "English": "Romansh"
   }, 
   "ro": {
-    "native": "rom\u00e2n\u0103", 
+    "native": "Rom\u00e2n\u0103", 
     "English": "Romanian"
   }, 
   "dsb": {
@@ -210,6 +218,10 @@
   "wo": {
     "native": "Wolof", 
     "English": "Wolof"
+  }, 
+  "bm": {
+    "native": "Bamanankan", 
+    "English": "Bambara"
   }, 
   "br": {
     "native": "Brezhoneg", 
@@ -267,9 +279,9 @@
     "native": "isiXhosa", 
     "English": "Xhosa"
   }, 
-  "nso": {
-    "native": "Sepedi", 
-    "English": "Northern Sotho"
+  "brx": {
+    "native": "\u092c\u0930'", 
+    "English": "Bodo"
   }, 
   "ta-LK": {
     "native": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd (\u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8)", 
@@ -302,6 +314,10 @@
   "tn": {
     "native": "Setswana", 
     "English": "Tswana"
+  }, 
+  "kok": {
+    "native": "\u0915\u094b\u0902\u0915\u0928\u0940", 
+    "English": "Konkani"
   }, 
   "tl": {
     "native": "Tagalog", 
@@ -391,6 +407,10 @@
     "native": "\u0627\u064f\u0631\u062f\u0648", 
     "English": "Urdu"
   }, 
+  "cak": {
+    "native": "Maya Kaqchikel", 
+    "English": "Kaqchikel"
+  }, 
   "ss": {
     "native": "siSwati", 
     "English": "Siswati"
@@ -474,6 +494,10 @@
   "sat": {
     "native": "\u0938\u0902\u0924\u093e\u0932\u0940", 
     "English": "Santali"
+  }, 
+  "sk": {
+    "native": "sloven\u010dina", 
+    "English": "Slovak"
   }, 
   "sr": {
     "native": "\u0421\u0440\u043f\u0441\u043a\u0438", 
@@ -563,9 +587,9 @@
     "native": "Espa\u00f1ol (de M\u00e9xico)", 
     "English": "Spanish (Mexico)"
   }, 
-  "sk": {
-    "native": "sloven\u010dina", 
-    "English": "Slovak"
+  "ks": {
+    "native": "\u0643\u0634\u0645\u06cc\u0631\u06cc", 
+    "English": "Kashmiri"
   }, 
   "de-DE": {
     "native": "Deutsch (Deutschland)", 

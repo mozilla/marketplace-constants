@@ -4,6 +4,10 @@ python:
 install: pip install -r requirements.txt
 script: nosetests
 sudo: false
+before_deploy:
+  - mv dist our-dist
+after_deploy:
+  - mv our-dist dist
 deploy:
   provider: pypi
   user: marketplacedevsinternal

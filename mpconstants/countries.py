@@ -114,6 +114,7 @@ COUNTRY_DETAILS = {
     'ARM': {
         'adolescent': True,
         'id': 68,
+        'mcc': 283,
         'name': u'Armenia',
         'ratingsbody': None,
         'slug': 'am',
@@ -451,6 +452,7 @@ COUNTRY_DETAILS = {
     'COD': {
         'adolescent': True,
         'id': 100,
+        'mcc': 630,
         'name': u'Congo, Democratic Republic of the',
         'ratingsbody': None,
         'slug': 'cd',
@@ -1264,7 +1266,6 @@ COUNTRY_DETAILS = {
     'MAF': {
         'adolescent': True,
         'id': 255,
-        'mcc': 340,
         'name': u'Saint Martin (French part)',
         'ratingsbody': None,
         'slug': 'mf',
@@ -1429,6 +1430,7 @@ COUNTRY_DETAILS = {
     'MTQ': {
         'adolescent': True,
         'id': 165,
+        'mcc': 340,
         'name': u'Martinique',
         'ratingsbody': None,
         'slug': 'mq',

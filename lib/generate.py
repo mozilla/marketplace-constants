@@ -19,7 +19,6 @@ import sys
 from jinja2 import Environment, PackageLoader
 import mobile_codes
 import requests
-import mobile_codes
 
 
 jinja2 = Environment(loader=PackageLoader('templates', 'jinja2'))
